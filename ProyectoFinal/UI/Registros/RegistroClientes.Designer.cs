@@ -50,7 +50,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(146, 157);
+            this.label1.Location = new System.Drawing.Point(44, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 21);
             this.label1.TabIndex = 0;
@@ -61,7 +61,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(146, 195);
+            this.label2.Location = new System.Drawing.Point(44, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 21);
             this.label2.TabIndex = 1;
@@ -72,7 +72,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(146, 228);
+            this.label3.Location = new System.Drawing.Point(44, 233);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 21);
             this.label3.TabIndex = 2;
@@ -83,7 +83,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(146, 271);
+            this.label4.Location = new System.Drawing.Point(44, 276);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 21);
             this.label4.TabIndex = 3;
@@ -91,30 +91,30 @@
             // 
             // ClienteIdtextBox
             // 
-            this.ClienteIdtextBox.Location = new System.Drawing.Point(284, 157);
+            this.ClienteIdtextBox.Location = new System.Drawing.Point(165, 165);
             this.ClienteIdtextBox.Name = "ClienteIdtextBox";
-            this.ClienteIdtextBox.Size = new System.Drawing.Size(144, 22);
+            this.ClienteIdtextBox.Size = new System.Drawing.Size(26, 22);
             this.ClienteIdtextBox.TabIndex = 4;
             // 
             // NombrestextBox
             // 
-            this.NombrestextBox.Location = new System.Drawing.Point(284, 195);
+            this.NombrestextBox.Location = new System.Drawing.Point(165, 200);
             this.NombrestextBox.Name = "NombrestextBox";
-            this.NombrestextBox.Size = new System.Drawing.Size(144, 22);
+            this.NombrestextBox.Size = new System.Drawing.Size(313, 22);
             this.NombrestextBox.TabIndex = 5;
             // 
             // DirecciontextBox
             // 
-            this.DirecciontextBox.Location = new System.Drawing.Point(284, 228);
+            this.DirecciontextBox.Location = new System.Drawing.Point(165, 233);
             this.DirecciontextBox.Name = "DirecciontextBox";
-            this.DirecciontextBox.Size = new System.Drawing.Size(144, 22);
+            this.DirecciontextBox.Size = new System.Drawing.Size(313, 22);
             this.DirecciontextBox.TabIndex = 6;
             // 
             // TelefonotextBox
             // 
-            this.TelefonotextBox.Location = new System.Drawing.Point(284, 270);
+            this.TelefonotextBox.Location = new System.Drawing.Point(165, 275);
             this.TelefonotextBox.Name = "TelefonotextBox";
-            this.TelefonotextBox.Size = new System.Drawing.Size(144, 22);
+            this.TelefonotextBox.Size = new System.Drawing.Size(313, 22);
             this.TelefonotextBox.TabIndex = 7;
             // 
             // Modificarbutton

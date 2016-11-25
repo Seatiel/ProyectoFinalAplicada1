@@ -57,13 +57,12 @@ namespace ProyectoFinal.UI.Registros
 
         private void Eliminarbutton_Click(object sender, EventArgs e)
         {
-            int Id = Convert.ToInt32(ClienteIdtextBox.Text);
-            //var cliente = new  Clientes();
+            int Id = Convert.ToInt32(ClienteIdtextBox.Text);            
             if (ClientesBLL.Eliminar(Id))
             {
                 MessageBox.Show("Cliente eliminado");
                 Limpiar();
-            }                   
+            }
         }
 
         private void Modificarbutton_Click(object sender, EventArgs e)

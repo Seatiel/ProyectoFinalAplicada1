@@ -23,7 +23,7 @@ namespace BLL
                     db.SaveChanges();
                     retorno = true;
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     throw;                    
                 }
@@ -39,15 +39,14 @@ namespace BLL
             {
                 try
                 {
-                    db.Cliente.Find(id);
+                    cliente = db.Cliente.Find(id);
                     db.Cliente.Remove(cliente);
                     db.SaveChanges();
                     retorno = true;                   
                 }
                 catch (Exception e)
                 {
-                    //throw;
-                    MessageBox.Show(e.ToString());
+                    throw;                    
                 }
                 return retorno;
             }
