@@ -16,6 +16,10 @@ namespace ProyectoFinal
             InitializeComponent();
         }
 
-
+        private void registroClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UI.Registros.RegistroClientes rc = new UI.Registros.RegistroClientes();
+            rc.Show();
+        }
     }
 }

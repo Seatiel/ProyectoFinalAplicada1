@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Remoting.Messaging;
+using System.Windows.Forms;
 
 namespace BLL
 {
@@ -21,30 +23,33 @@ namespace BLL
                     db.SaveChanges();
                     retorno = true;
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    throw;
+                    throw;                    
                 }
                 return retorno;
             }
         }
 
-        public static Clientes Eliminar(int id)
+        public static bool Eliminar(int id)
         {
+            bool retorno = false;
             var cliente = new Clientes();
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    cliente = db.Cliente.Find(id);
+                    db.Cliente.Find(id);
                     db.Cliente.Remove(cliente);
-                    db.SaveChanges();                    
+                    db.SaveChanges();
+                    retorno = true;                   
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    throw;
+                    //throw;
+                    MessageBox.Show(e.ToString());
                 }
-                return cliente;
+                return retorno;
             }
         }
 
@@ -65,24 +70,35 @@ namespace BLL
             }
         }
 
-        public static Clientes Modificar(int id)
+        public static bool Modificar(int id)
         {
+            bool retornno = false;
             var cliente = new Clientes();
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    cliente = db.Cliente.Find(id);
+                    db.Cliente.Find(id);
                     db.Cliente.Add(cliente);
                     db.SaveChanges();
+                    retornno = true;
                 }
                 catch (Exception)
                 {
                     throw;
                 }
-                return cliente;
+                return retornno;
             }
         }
+
+        public static List<Clientes> GetList()
+        {
+            List<Clientes> lista = new List<Clientes>();
+            var db = new LavanderiaDb();
+            lista = db.Cliente.ToList();
+            return lista;
+        }
+
 
     }
 }
