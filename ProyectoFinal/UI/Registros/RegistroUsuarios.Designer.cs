@@ -151,6 +151,7 @@
             this.Cancelarbutton.Text = "Cancelar";
             this.Cancelarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Cancelarbutton.UseVisualStyleBackColor = true;
+            this.Cancelarbutton.Click += new System.EventHandler(this.Cancelarbutton_Click_1);
             // 
             // Guardarbutton
             // 

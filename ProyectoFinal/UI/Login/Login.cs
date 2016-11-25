@@ -65,6 +65,11 @@ namespace ProyectoFinal.UI.Login
             }
         }
 
+        public void Limpiar()
+        {
+            NombretextBox.Text = ClavetextBox.Text = "";
+        }
+
         private void Cancelarbutton_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -72,6 +77,7 @@ namespace ProyectoFinal.UI.Login
 
         private void CrearUsuariolinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Limpiar();
             Registros.RegistroUsuarios ru = new Registros.RegistroUsuarios();
             ru.Show();
         }

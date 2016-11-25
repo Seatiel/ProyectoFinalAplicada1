@@ -69,11 +69,11 @@ namespace ProyectoFinal.UI.Registros
             usuario.Nombre = NombretextBox.Text;
             usuario.Clave = ClavetextBox.Text;
             return usuario;
-        }
+        }        
 
-        private void Cancelarbutton_Click(object sender, EventArgs e)
+        private void Cancelarbutton_Click_1(object sender, EventArgs e)
         {
-                this.Close();
+            this.Close();
         }
     }
 }
