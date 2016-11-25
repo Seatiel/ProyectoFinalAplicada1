@@ -44,7 +44,7 @@ namespace BLL
                     db.SaveChanges();
                     retorno = true;                   
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     throw;                    
                 }
