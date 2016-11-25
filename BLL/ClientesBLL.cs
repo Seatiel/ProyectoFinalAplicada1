@@ -69,24 +69,24 @@ namespace BLL
             }
         }
 
-        public static bool Modificar(int id)
-        {
-            bool retornno = false;
+        public static Clientes Modificar(int id, string nombre, string direccion, string telefono)
+        {            
             var cliente = new Clientes();
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    db.Cliente.Find(id);
-                    db.Cliente.Add(cliente);
-                    db.SaveChanges();
-                    retornno = true;
+                    cliente = db.Cliente.Where(c => c.ClienteId.Equals(id)).FirstOrDefault();
+                    cliente.Nombres = nombre;
+                    cliente.Direccion = direccion;
+                    cliente.Telefono = telefono;
+                    db.SaveChanges();                
                 }
                 catch (Exception)
                 {
                     throw;
                 }
-                return retornno;
+                return cliente;
             }
         }
 

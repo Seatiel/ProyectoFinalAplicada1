@@ -119,52 +119,70 @@
             // 
             // Modificarbutton
             // 
+            this.Modificarbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Modificarbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Modificarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Modificarbutton.Location = new System.Drawing.Point(157, 376);
+            this.Modificarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Modificarbutton.Image")));
+            this.Modificarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Modificarbutton.Location = new System.Drawing.Point(50, 358);
             this.Modificarbutton.Name = "Modificarbutton";
-            this.Modificarbutton.Size = new System.Drawing.Size(101, 39);
+            this.Modificarbutton.Size = new System.Drawing.Size(141, 50);
             this.Modificarbutton.TabIndex = 8;
             this.Modificarbutton.Text = "Modificar";
-            this.Modificarbutton.UseVisualStyleBackColor = true;
+            this.Modificarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Modificarbutton.UseVisualStyleBackColor = false;
             this.Modificarbutton.Click += new System.EventHandler(this.Modificarbutton_Click);
             // 
             // Guardarbutton
             // 
+            this.Guardarbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Guardarbutton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Guardarbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Guardarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardarbutton.Location = new System.Drawing.Point(319, 376);
+            this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
+            this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Guardarbutton.Location = new System.Drawing.Point(257, 358);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(101, 39);
+            this.Guardarbutton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Guardarbutton.Size = new System.Drawing.Size(154, 50);
             this.Guardarbutton.TabIndex = 9;
             this.Guardarbutton.Text = "Guardar";
+            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Guardarbutton.UseVisualStyleBackColor = true;
             this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
             // Eliminarbutton
             // 
             this.Eliminarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Eliminarbutton.Location = new System.Drawing.Point(481, 376);
+            this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
+            this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Eliminarbutton.Location = new System.Drawing.Point(481, 358);
             this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(101, 39);
+            this.Eliminarbutton.Size = new System.Drawing.Size(154, 50);
             this.Eliminarbutton.TabIndex = 10;
             this.Eliminarbutton.Text = "Eliminar";
+            this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Eliminarbutton.UseVisualStyleBackColor = true;
             this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Buscarbutton
             // 
             this.Buscarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buscarbutton.Location = new System.Drawing.Point(481, 148);
+            this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
+            this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Buscarbutton.Location = new System.Drawing.Point(481, 140);
             this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(101, 39);
+            this.Buscarbutton.Size = new System.Drawing.Size(131, 47);
             this.Buscarbutton.TabIndex = 11;
             this.Buscarbutton.Text = "Buscar";
+            this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Buscarbutton.UseVisualStyleBackColor = true;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(301, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(274, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(110, 92);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

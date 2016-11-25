@@ -60,21 +60,26 @@ namespace ProyectoFinal.UI.Registros
             int Id = Convert.ToInt32(ClienteIdtextBox.Text);            
             if (ClientesBLL.Eliminar(Id))
             {
-                MessageBox.Show("Cliente eliminado");
+                MessageBox.Show("Cliente Eliminado");
                 Limpiar();
             }
         }
 
         private void Modificarbutton_Click(object sender, EventArgs e)
         {
-            /*int Id = Convert.ToInt32(ClienteIdtextBox.Text);
-            var cliente = new Clientes();
-            
-            if (ClientesBLL.Buscar(Id))
+            int Id = Convert.ToInt32(ClienteIdtextBox.Text);
+            string Nombres = NombrestextBox.Text;
+            string Direccion = DirecciontextBox.Text;
+            string Telefono = TelefonotextBox.Text;
+
+            var cliente = ClientesBLL.Buscar(Id);
+
+            if (Id != null)
             {
-                
-                MessageBox.Show("Cliente Guardado");
-            }*/
+                ClientesBLL.Modificar(Id,Nombres,Direccion,Telefono);
+                MessageBox.Show("Cliente Modificado");
+                Limpiar();                             
+            }            
         }
     }
 }

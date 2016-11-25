@@ -48,7 +48,7 @@
             // Cancelarbutton
             // 
             this.Cancelarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancelarbutton.Location = new System.Drawing.Point(337, 363);
+            this.Cancelarbutton.Location = new System.Drawing.Point(301, 363);
             this.Cancelarbutton.Name = "Cancelarbutton";
             this.Cancelarbutton.Size = new System.Drawing.Size(114, 56);
             this.Cancelarbutton.TabIndex = 14;
@@ -59,7 +59,7 @@
             // Loginbutton
             // 
             this.Loginbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginbutton.Location = new System.Drawing.Point(152, 363);
+            this.Loginbutton.Location = new System.Drawing.Point(116, 363);
             this.Loginbutton.Name = "Loginbutton";
             this.Loginbutton.Size = new System.Drawing.Size(114, 56);
             this.Loginbutton.TabIndex = 13;
@@ -70,20 +70,22 @@
             // ClavetextBox
             // 
             this.ClavetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClavetextBox.Location = new System.Drawing.Point(232, 213);
+            this.ClavetextBox.Location = new System.Drawing.Point(196, 213);
             this.ClavetextBox.Name = "ClavetextBox";
             this.ClavetextBox.PasswordChar = '*';
             this.ClavetextBox.Size = new System.Drawing.Size(168, 27);
             this.ClavetextBox.TabIndex = 12;
+            this.ClavetextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ClavetextBox.UseSystemPasswordChar = true;
             // 
             // NombretextBox
             // 
             this.NombretextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NombretextBox.Location = new System.Drawing.Point(232, 165);
+            this.NombretextBox.Location = new System.Drawing.Point(196, 165);
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(168, 27);
             this.NombretextBox.TabIndex = 11;
+            this.NombretextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -91,7 +93,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(104, 217);
+            this.label2.Location = new System.Drawing.Point(68, 217);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 23);
             this.label2.TabIndex = 10;
@@ -103,7 +105,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(133, 169);
+            this.label1.Location = new System.Drawing.Point(97, 169);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 23);
             this.label1.TabIndex = 9;
@@ -112,7 +114,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(260, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(224, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(109, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -127,7 +129,7 @@
             this.CrearUsuariolinkLabel.DisabledLinkColor = System.Drawing.Color.DarkBlue;
             this.CrearUsuariolinkLabel.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CrearUsuariolinkLabel.LinkColor = System.Drawing.Color.DarkBlue;
-            this.CrearUsuariolinkLabel.Location = new System.Drawing.Point(235, 296);
+            this.CrearUsuariolinkLabel.Location = new System.Drawing.Point(199, 296);
             this.CrearUsuariolinkLabel.Name = "CrearUsuariolinkLabel";
             this.CrearUsuariolinkLabel.Size = new System.Drawing.Size(134, 23);
             this.CrearUsuariolinkLabel.TabIndex = 16;
@@ -157,6 +159,7 @@
             this.Controls.Add(this.NombretextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

@@ -35,14 +35,14 @@
             this.NombretextBox = new System.Windows.Forms.TextBox();
             this.ClavetextBox = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.Cancelarbutton = new System.Windows.Forms.Button();
-            this.Guardarbutton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ConfirmarClavetextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.NombreerrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.ClaveerrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.ConfirmarClaveerrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Cancelarbutton = new System.Windows.Forms.Button();
+            this.Guardarbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NombreerrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClaveerrorProvider)).BeginInit();
@@ -55,7 +55,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(169, 142);
+            this.label1.Location = new System.Drawing.Point(152, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 23);
             this.label1.TabIndex = 0;
@@ -67,7 +67,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(140, 190);
+            this.label2.Location = new System.Drawing.Point(123, 190);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 23);
             this.label2.TabIndex = 1;
@@ -95,28 +95,6 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "guyug.jpg");
             // 
-            // Cancelarbutton
-            // 
-            this.Cancelarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancelarbutton.Location = new System.Drawing.Point(371, 333);
-            this.Cancelarbutton.Name = "Cancelarbutton";
-            this.Cancelarbutton.Size = new System.Drawing.Size(114, 56);
-            this.Cancelarbutton.TabIndex = 7;
-            this.Cancelarbutton.Text = "Cancelar";
-            this.Cancelarbutton.UseVisualStyleBackColor = true;
-            this.Cancelarbutton.Click += new System.EventHandler(this.Cancelarbutton_Click);
-            // 
-            // Guardarbutton
-            // 
-            this.Guardarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardarbutton.Location = new System.Drawing.Point(186, 333);
-            this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(114, 56);
-            this.Guardarbutton.TabIndex = 6;
-            this.Guardarbutton.Text = "Crear Usuario";
-            this.Guardarbutton.UseVisualStyleBackColor = true;
-            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -141,7 +119,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(37, 237);
+            this.label3.Location = new System.Drawing.Point(20, 237);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(225, 23);
             this.label3.TabIndex = 9;
@@ -159,17 +137,37 @@
             // 
             this.ConfirmarClaveerrorProvider.ContainerControl = this;
             // 
+            // Cancelarbutton
+            // 
+            this.Cancelarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancelarbutton.Location = new System.Drawing.Point(380, 350);
+            this.Cancelarbutton.Name = "Cancelarbutton";
+            this.Cancelarbutton.Size = new System.Drawing.Size(114, 56);
+            this.Cancelarbutton.TabIndex = 12;
+            this.Cancelarbutton.Text = "Cancelar";
+            this.Cancelarbutton.UseVisualStyleBackColor = true;
+            // 
+            // Guardarbutton
+            // 
+            this.Guardarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Guardarbutton.Location = new System.Drawing.Point(195, 350);
+            this.Guardarbutton.Name = "Guardarbutton";
+            this.Guardarbutton.Size = new System.Drawing.Size(114, 56);
+            this.Guardarbutton.TabIndex = 11;
+            this.Guardarbutton.Text = "Crear Usuario";
+            this.Guardarbutton.UseVisualStyleBackColor = true;
+            // 
             // RegistroUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(652, 453);
+            this.Controls.Add(this.Cancelarbutton);
+            this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.ConfirmarClavetextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Cancelarbutton);
-            this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.ClavetextBox);
             this.Controls.Add(this.NombretextBox);
             this.Controls.Add(this.label2);
@@ -193,13 +191,13 @@
         private System.Windows.Forms.TextBox NombretextBox;
         private System.Windows.Forms.TextBox ClavetextBox;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button Cancelarbutton;
-        private System.Windows.Forms.Button Guardarbutton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox ConfirmarClavetextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ErrorProvider NombreerrorProvider;
         private System.Windows.Forms.ErrorProvider ClaveerrorProvider;
         private System.Windows.Forms.ErrorProvider ConfirmarClaveerrorProvider;
+        private System.Windows.Forms.Button Cancelarbutton;
+        private System.Windows.Forms.Button Guardarbutton;
     }
 }
