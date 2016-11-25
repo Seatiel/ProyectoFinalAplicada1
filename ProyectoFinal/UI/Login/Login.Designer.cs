@@ -48,22 +48,28 @@
             // Cancelarbutton
             // 
             this.Cancelarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancelarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Cancelarbutton.Image")));
+            this.Cancelarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Cancelarbutton.Location = new System.Drawing.Point(301, 363);
             this.Cancelarbutton.Name = "Cancelarbutton";
-            this.Cancelarbutton.Size = new System.Drawing.Size(114, 56);
+            this.Cancelarbutton.Size = new System.Drawing.Size(143, 56);
             this.Cancelarbutton.TabIndex = 14;
             this.Cancelarbutton.Text = "Cancelar";
+            this.Cancelarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Cancelarbutton.UseVisualStyleBackColor = true;
             this.Cancelarbutton.Click += new System.EventHandler(this.Cancelarbutton_Click);
             // 
             // Loginbutton
             // 
             this.Loginbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginbutton.Location = new System.Drawing.Point(116, 363);
+            this.Loginbutton.Image = ((System.Drawing.Image)(resources.GetObject("Loginbutton.Image")));
+            this.Loginbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Loginbutton.Location = new System.Drawing.Point(101, 363);
             this.Loginbutton.Name = "Loginbutton";
-            this.Loginbutton.Size = new System.Drawing.Size(114, 56);
+            this.Loginbutton.Size = new System.Drawing.Size(129, 56);
             this.Loginbutton.TabIndex = 13;
             this.Loginbutton.Text = "Login";
+            this.Loginbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Loginbutton.UseVisualStyleBackColor = true;
             this.Loginbutton.Click += new System.EventHandler(this.Loginbutton_Click);
             // 

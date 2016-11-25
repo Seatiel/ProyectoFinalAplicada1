@@ -78,7 +78,7 @@
             this.NombretextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NombretextBox.Location = new System.Drawing.Point(268, 138);
             this.NombretextBox.Name = "NombretextBox";
-            this.NombretextBox.Size = new System.Drawing.Size(168, 27);
+            this.NombretextBox.Size = new System.Drawing.Size(184, 27);
             this.NombretextBox.TabIndex = 2;
             // 
             // ClavetextBox
@@ -86,7 +86,7 @@
             this.ClavetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClavetextBox.Location = new System.Drawing.Point(268, 186);
             this.ClavetextBox.Name = "ClavetextBox";
-            this.ClavetextBox.Size = new System.Drawing.Size(168, 27);
+            this.ClavetextBox.Size = new System.Drawing.Size(184, 27);
             this.ClavetextBox.TabIndex = 3;
             // 
             // imageList1
@@ -97,10 +97,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(312, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(306, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(83, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -110,7 +112,7 @@
             this.ConfirmarClavetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmarClavetextBox.Location = new System.Drawing.Point(268, 233);
             this.ConfirmarClavetextBox.Name = "ConfirmarClavetextBox";
-            this.ConfirmarClavetextBox.Size = new System.Drawing.Size(168, 27);
+            this.ConfirmarClavetextBox.Size = new System.Drawing.Size(184, 27);
             this.ConfirmarClavetextBox.TabIndex = 10;
             // 
             // label3
@@ -140,21 +142,27 @@
             // Cancelarbutton
             // 
             this.Cancelarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancelarbutton.Location = new System.Drawing.Point(380, 350);
+            this.Cancelarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Cancelarbutton.Image")));
+            this.Cancelarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Cancelarbutton.Location = new System.Drawing.Point(392, 349);
             this.Cancelarbutton.Name = "Cancelarbutton";
-            this.Cancelarbutton.Size = new System.Drawing.Size(114, 56);
+            this.Cancelarbutton.Size = new System.Drawing.Size(171, 56);
             this.Cancelarbutton.TabIndex = 12;
             this.Cancelarbutton.Text = "Cancelar";
+            this.Cancelarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Cancelarbutton.UseVisualStyleBackColor = true;
             // 
             // Guardarbutton
             // 
             this.Guardarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardarbutton.Location = new System.Drawing.Point(195, 350);
+            this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
+            this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Guardarbutton.Location = new System.Drawing.Point(127, 349);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(114, 56);
+            this.Guardarbutton.Size = new System.Drawing.Size(171, 56);
             this.Guardarbutton.TabIndex = 11;
             this.Guardarbutton.Text = "Crear Usuario";
+            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Guardarbutton.UseVisualStyleBackColor = true;
             // 
             // RegistroUsuarios
