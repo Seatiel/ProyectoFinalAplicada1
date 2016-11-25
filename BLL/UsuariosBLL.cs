@@ -99,6 +99,13 @@ namespace BLL
             return lista;
         }
 
+        public static List<Usuarios> GetList()
+        {
+            List<Usuarios> lista = new List<Usuarios>();
+            var db = new LavanderiaDb();
+            lista = db.Usuario.ToList();
+            return lista;
+        }
 
     }
 }

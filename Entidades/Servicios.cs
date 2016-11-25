@@ -6,11 +6,10 @@ using System.Text;
 
 namespace Entidades
 {
-    public class Facturas
+    public class Servicios
     {
         [Key]
-        public int FacturaId { get; set; }
-        public int ClienteId { get; set; }
-        public DateTime Fecha { get; set; }    
+        public int ServiciosId { get; set; }
+        public string Nombre { get; set; }
     }
 }

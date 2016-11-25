@@ -31,8 +31,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regustroDeFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -67,6 +67,12 @@
             this.registroClientesToolStripMenuItem.Text = "&Registro Clientes";
             this.registroClientesToolStripMenuItem.Click += new System.EventHandler(this.registroClientesToolStripMenuItem_Click);
             // 
+            // regustroDeFacturaToolStripMenuItem
+            // 
+            this.regustroDeFacturaToolStripMenuItem.Name = "regustroDeFacturaToolStripMenuItem";
+            this.regustroDeFacturaToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.regustroDeFacturaToolStripMenuItem.Text = "&Regustro de Factura";
+            // 
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -74,12 +80,6 @@
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.consultasToolStripMenuItem.Text = "&Consultas";
-            // 
-            // regustroDeFacturaToolStripMenuItem
-            // 
-            this.regustroDeFacturaToolStripMenuItem.Name = "regustroDeFacturaToolStripMenuItem";
-            this.regustroDeFacturaToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
-            this.regustroDeFacturaToolStripMenuItem.Text = "&Regustro de Factura";
             // 
             // consultaClientesToolStripMenuItem
             // 
@@ -98,7 +98,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(1402, 663);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;

@@ -29,15 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ClientegroupBox = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Modificarbutton = new System.Windows.Forms.Button();
@@ -45,7 +39,7 @@
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.Agregarbutton = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.FacturagroupBox = new System.Windows.Forms.GroupBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -54,9 +48,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.ClientegroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.FacturagroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -69,24 +63,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Facturacion";
             // 
-            // groupBox1
+            // ClientegroupBox
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(973, 101);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(527, 199);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Clientes ";
+            this.ClientegroupBox.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ClientegroupBox.Controls.Add(this.textBox4);
+            this.ClientegroupBox.Controls.Add(this.label7);
+            this.ClientegroupBox.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientegroupBox.Location = new System.Drawing.Point(799, 99);
+            this.ClientegroupBox.Name = "ClientegroupBox";
+            this.ClientegroupBox.Size = new System.Drawing.Size(527, 199);
+            this.ClientegroupBox.TabIndex = 6;
+            this.ClientegroupBox.TabStop = false;
+            this.ClientegroupBox.Text = "Clientes ";
             // 
             // textBox4
             // 
@@ -105,71 +93,21 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "ClienteId:";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(126, 157);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(223, 29);
-            this.textBox3.TabIndex = 14;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(126, 115);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(223, 29);
-            this.textBox2.TabIndex = 13;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(126, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 29);
-            this.textBox1.TabIndex = 12;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 21);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Nombre:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 119);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 21);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Direccion:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 161);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 21);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Telefono:";
-            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(1391, 73);
+            this.dateTimePicker1.Location = new System.Drawing.Point(996, 28);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(280, 22);
             this.dateTimePicker1.TabIndex = 7;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 385);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1659, 241);
+            this.dataGridView1.Size = new System.Drawing.Size(1350, 241);
             this.dataGridView1.TabIndex = 8;
             // 
             // Modificarbutton
@@ -205,7 +143,7 @@
             // Buscarbutton
             // 
             this.Buscarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buscarbutton.Location = new System.Drawing.Point(998, 675);
+            this.Buscarbutton.Location = new System.Drawing.Point(996, 675);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(144, 44);
             this.Buscarbutton.TabIndex = 12;
@@ -215,31 +153,31 @@
             // Agregarbutton
             // 
             this.Agregarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Agregarbutton.Location = new System.Drawing.Point(1239, 675);
+            this.Agregarbutton.Location = new System.Drawing.Point(1182, 675);
             this.Agregarbutton.Name = "Agregarbutton";
             this.Agregarbutton.Size = new System.Drawing.Size(144, 44);
             this.Agregarbutton.TabIndex = 13;
             this.Agregarbutton.Text = "Agregar";
             this.Agregarbutton.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // FacturagroupBox
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(61, 101);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(527, 199);
-            this.groupBox2.TabIndex = 15;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Clientes ";
+            this.FacturagroupBox.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.FacturagroupBox.Controls.Add(this.textBox5);
+            this.FacturagroupBox.Controls.Add(this.textBox6);
+            this.FacturagroupBox.Controls.Add(this.textBox7);
+            this.FacturagroupBox.Controls.Add(this.label5);
+            this.FacturagroupBox.Controls.Add(this.label6);
+            this.FacturagroupBox.Controls.Add(this.label8);
+            this.FacturagroupBox.Controls.Add(this.textBox8);
+            this.FacturagroupBox.Controls.Add(this.label9);
+            this.FacturagroupBox.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FacturagroupBox.Location = new System.Drawing.Point(12, 88);
+            this.FacturagroupBox.Name = "FacturagroupBox";
+            this.FacturagroupBox.Size = new System.Drawing.Size(527, 199);
+            this.FacturagroupBox.TabIndex = 15;
+            this.FacturagroupBox.TabStop = false;
+            this.FacturagroupBox.Text = "Facturas";
             // 
             // textBox5
             // 
@@ -305,17 +243,17 @@
             this.label9.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(7, 36);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 21);
+            this.label9.Size = new System.Drawing.Size(93, 21);
             this.label9.TabIndex = 7;
-            this.label9.Text = "ClienteId:";
+            this.label9.Text = "FacturaId:";
             // 
             // RegistroFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(1772, 733);
-            this.Controls.Add(this.groupBox2);
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.ClientSize = new System.Drawing.Size(1374, 733);
+            this.Controls.Add(this.FacturagroupBox);
             this.Controls.Add(this.Agregarbutton);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.Eliminarbutton);
@@ -323,15 +261,15 @@
             this.Controls.Add(this.Modificarbutton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.ClientegroupBox);
             this.Controls.Add(this.label1);
             this.Name = "RegistroFactura";
             this.Text = "RegistroFactura";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.ClientegroupBox.ResumeLayout(false);
+            this.ClientegroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.FacturagroupBox.ResumeLayout(false);
+            this.FacturagroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,13 +278,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox ClientegroupBox;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -356,7 +288,7 @@
         private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.Button Buscarbutton;
         private System.Windows.Forms.Button Agregarbutton;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox FacturagroupBox;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
