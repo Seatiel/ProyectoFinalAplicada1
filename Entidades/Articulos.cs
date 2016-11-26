@@ -18,5 +18,10 @@ namespace Entidades
         {
             this.v = v;
         }
+
+        public Articulos()
+        {
+
+        }
     }
 }

@@ -18,6 +18,11 @@ namespace Entidades
             this.Nombre = v;
         }
 
+        public Servicios()
+        {
+
+        }
+
         
     }
 }

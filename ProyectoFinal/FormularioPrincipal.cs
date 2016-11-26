@@ -21,5 +21,11 @@ namespace ProyectoFinal
             UI.Registros.RegistroClientes rc = new UI.Registros.RegistroClientes();
             rc.Show();
         }
+
+        private void regustroDeFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UI.Registros.RegistroFactura rf = new UI.Registros.RegistroFactura();
+            rf.Show();
+        }
     }
 }

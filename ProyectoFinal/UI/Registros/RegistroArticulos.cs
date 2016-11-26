@@ -43,10 +43,10 @@ namespace ProyectoFinal.UI.Registros
         {
             
 
-            if (ServiciosBLL.)
+            /*if (ServiciosBLL.)
             {
 
-            }
+            }*/
             
 
         }
@@ -62,7 +62,7 @@ namespace ProyectoFinal.UI.Registros
         private void Agregarbutton_Click(object sender, EventArgs e)
         {
 
-            lista.Add(new ServiciosArticulos((int)ServicioscomboBox.SelectedValue, Convert.ToDouble(PreciotextBox.Text));
+            lista.Add(new ServiciosArticulos((int)ServicioscomboBox.SelectedValue, Convert.ToDouble(PreciotextBox.Text)));
         }
     }
 }

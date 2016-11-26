@@ -73,6 +73,7 @@
             this.regustroDeFacturaToolStripMenuItem.Name = "regustroDeFacturaToolStripMenuItem";
             this.regustroDeFacturaToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.regustroDeFacturaToolStripMenuItem.Text = "&Regustro de Factura";
+            this.regustroDeFacturaToolStripMenuItem.Click += new System.EventHandler(this.regustroDeFacturaToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 

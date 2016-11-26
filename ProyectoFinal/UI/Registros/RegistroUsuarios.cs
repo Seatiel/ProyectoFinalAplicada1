@@ -74,6 +74,6 @@ namespace ProyectoFinal.UI.Registros
         private void Cancelarbutton_Click_1(object sender, EventArgs e)
         {
             this.Close();
-        }
+        }        
     }
 }
