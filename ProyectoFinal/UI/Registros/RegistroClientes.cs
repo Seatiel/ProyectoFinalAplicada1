@@ -40,7 +40,9 @@ namespace ProyectoFinal.UI.Registros
 
         public void Limpiar()
         {
-            NombrestextBox.Text = DirecciontextBox.Text = TelefonotextBox.Text = "";
+            NombrestextBox.Clear();
+            DirecciontextBox.Clear();
+            TelefonotextBox.Clear();
         }
 
         private void Buscarbutton_Click(object sender, EventArgs e)

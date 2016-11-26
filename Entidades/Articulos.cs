@@ -12,11 +12,11 @@ namespace Entidades
         public int ArticuloId { get; set; }
         public string Nombre { get; set; }
 
-        private string v;
 
-        public Articulos(string v)
+        public Articulos(int id, string nombre)
         {
-            this.v = v;
+            this.ArticuloId = id;
+            this.Nombre = nombre;
         }
 
         public Articulos()

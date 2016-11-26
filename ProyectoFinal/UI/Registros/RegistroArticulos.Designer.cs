@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ArticuloIdtextBox = new System.Windows.Forms.TextBox();
             this.NombreArticulotextBox = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ArticulosdataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Buscarbutton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArticulosdataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(202, 63);
+            this.label1.Location = new System.Drawing.Point(190, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 20);
             this.label1.TabIndex = 0;
@@ -64,7 +64,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 97);
+            this.label2.Location = new System.Drawing.Point(49, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 20);
             this.label2.TabIndex = 1;
@@ -72,26 +72,26 @@
             // 
             // ArticuloIdtextBox
             // 
-            this.ArticuloIdtextBox.Location = new System.Drawing.Point(258, 61);
+            this.ArticuloIdtextBox.Location = new System.Drawing.Point(246, 61);
             this.ArticuloIdtextBox.Name = "ArticuloIdtextBox";
             this.ArticuloIdtextBox.Size = new System.Drawing.Size(100, 22);
             this.ArticuloIdtextBox.TabIndex = 2;
             // 
             // NombreArticulotextBox
             // 
-            this.NombreArticulotextBox.Location = new System.Drawing.Point(258, 97);
+            this.NombreArticulotextBox.Location = new System.Drawing.Point(246, 97);
             this.NombreArticulotextBox.Name = "NombreArticulotextBox";
             this.NombreArticulotextBox.Size = new System.Drawing.Size(100, 22);
             this.NombreArticulotextBox.TabIndex = 3;
             // 
-            // dataGridView1
+            // ArticulosdataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(66, 132);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(446, 150);
-            this.dataGridView1.TabIndex = 4;
+            this.ArticulosdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ArticulosdataGridView.Location = new System.Drawing.Point(6, 152);
+            this.ArticulosdataGridView.Name = "ArticulosdataGridView";
+            this.ArticulosdataGridView.RowTemplate.Height = 24;
+            this.ArticulosdataGridView.Size = new System.Drawing.Size(589, 150);
+            this.ArticulosdataGridView.TabIndex = 4;
             // 
             // groupBox1
             // 
@@ -101,13 +101,14 @@
             this.groupBox1.Controls.Add(this.Agregarbutton);
             this.groupBox1.Controls.Add(this.PreciotextBox);
             this.groupBox1.Controls.Add(this.ServicioscomboBox);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.ArticulosdataGridView);
+            this.groupBox1.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(50, 125);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(601, 308);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Servicios";
             // 
             // label4
             // 
@@ -131,9 +132,9 @@
             // 
             // Agregarbutton
             // 
-            this.Agregarbutton.Location = new System.Drawing.Point(505, 42);
+            this.Agregarbutton.Location = new System.Drawing.Point(494, 43);
             this.Agregarbutton.Name = "Agregarbutton";
-            this.Agregarbutton.Size = new System.Drawing.Size(75, 34);
+            this.Agregarbutton.Size = new System.Drawing.Size(86, 33);
             this.Agregarbutton.TabIndex = 7;
             this.Agregarbutton.Text = "agregar";
             this.Agregarbutton.UseVisualStyleBackColor = true;
@@ -143,7 +144,7 @@
             // 
             this.PreciotextBox.Location = new System.Drawing.Point(140, 97);
             this.PreciotextBox.Name = "PreciotextBox";
-            this.PreciotextBox.Size = new System.Drawing.Size(323, 22);
+            this.PreciotextBox.Size = new System.Drawing.Size(323, 28);
             this.PreciotextBox.TabIndex = 6;
             // 
             // ServicioscomboBox
@@ -151,12 +152,13 @@
             this.ServicioscomboBox.FormattingEnabled = true;
             this.ServicioscomboBox.Location = new System.Drawing.Point(140, 48);
             this.ServicioscomboBox.Name = "ServicioscomboBox";
-            this.ServicioscomboBox.Size = new System.Drawing.Size(323, 24);
+            this.ServicioscomboBox.Size = new System.Drawing.Size(323, 29);
             this.ServicioscomboBox.TabIndex = 5;
             // 
             // Nuevobutton
             // 
-            this.Nuevobutton.Location = new System.Drawing.Point(131, 482);
+            this.Nuevobutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nuevobutton.Location = new System.Drawing.Point(133, 475);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(98, 45);
             this.Nuevobutton.TabIndex = 8;
@@ -166,7 +168,8 @@
             // 
             // Guardarbutton
             // 
-            this.Guardarbutton.Location = new System.Drawing.Point(316, 482);
+            this.Guardarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Guardarbutton.Location = new System.Drawing.Point(318, 475);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(98, 45);
             this.Guardarbutton.TabIndex = 9;
@@ -176,7 +179,8 @@
             // 
             // Eliminarbutton
             // 
-            this.Eliminarbutton.Location = new System.Drawing.Point(508, 482);
+            this.Eliminarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Eliminarbutton.Location = new System.Drawing.Point(510, 475);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(98, 45);
             this.Eliminarbutton.TabIndex = 10;
@@ -185,7 +189,8 @@
             // 
             // Buscarbutton
             // 
-            this.Buscarbutton.Location = new System.Drawing.Point(502, 44);
+            this.Buscarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscarbutton.Location = new System.Drawing.Point(418, 44);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(95, 39);
             this.Buscarbutton.TabIndex = 11;
@@ -198,7 +203,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(745, 580);
+            this.ClientSize = new System.Drawing.Size(745, 539);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.Nuevobutton);
             this.Controls.Add(this.Guardarbutton);
@@ -210,7 +215,7 @@
             this.Controls.Add(this.label1);
             this.Name = "RegistroArticulos";
             this.Text = "RegistroArticulos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArticulosdataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -224,7 +229,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox ArticuloIdtextBox;
         private System.Windows.Forms.TextBox NombreArticulotextBox;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ArticulosdataGridView;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Agregarbutton;
         private System.Windows.Forms.TextBox PreciotextBox;

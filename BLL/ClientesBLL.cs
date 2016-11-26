@@ -98,6 +98,5 @@ namespace BLL
             return lista;
         }
 
-
     }
 }

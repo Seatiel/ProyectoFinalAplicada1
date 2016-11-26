@@ -27,5 +27,11 @@ namespace ProyectoFinal
             UI.Registros.RegistroFactura rf = new UI.Registros.RegistroFactura();
             rf.Show();
         }
+
+        private void registroDeArticuloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UI.Registros.RegistroArticulos ra = new UI.Registros.RegistroArticulos();
+            ra.Show();
+        }
     }
 }

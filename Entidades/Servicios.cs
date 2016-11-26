@@ -9,7 +9,7 @@ namespace Entidades
     public class Servicios
     {
         [Key]
-        public int ServiciosId { get; set; }
+        public int ServicioId { get; set; }
         public string Nombre { get; set; }
                
 

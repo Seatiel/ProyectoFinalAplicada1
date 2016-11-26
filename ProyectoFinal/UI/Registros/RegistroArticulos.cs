@@ -14,19 +14,20 @@ namespace ProyectoFinal.UI.Registros
 {
     public partial class RegistroArticulos : Form
     {
-        List<ServiciosArticulos> lista = new List<ServiciosArticulos>();
-
+        List<ServiciosArticulos> sa = new List<ServiciosArticulos>();
+        List<Articulos> a = new List<Articulos>();
 
         public RegistroArticulos()
         {
             InitializeComponent();
+            sa = new List<ServiciosArticulos>();
+            a = new List<Articulos>();
             AgregarArticulo();
-
         }
 
         public void AgregarArticulo()
         {
-            var articulos = new Servicios("Lavadp");
+            var articulos = new Servicios("Lavado");
             var articulos1 = new Servicios("Planchado");
             var articulos2 = new Servicios("Lavado y Planchado");
             
@@ -41,14 +42,10 @@ namespace ProyectoFinal.UI.Registros
 
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
-            
-
-            /*if (ServiciosBLL.)
-            {
-
-            }*/
-            
-
+            int Id;
+            int.TryParse(ArticuloIdtextBox.Text, out Id);
+            ServiciosArticulosBLL.Insertar(sa);
+            ArticulosBLL.Insertar(new Articulos(Id, NombreArticulotextBox.Text));
         }
 
         private void Nuevobutton_Click(object sender, EventArgs e)
@@ -61,8 +58,10 @@ namespace ProyectoFinal.UI.Registros
 
         private void Agregarbutton_Click(object sender, EventArgs e)
         {
-
-            lista.Add(new ServiciosArticulos((int)ServicioscomboBox.SelectedValue, Convert.ToDouble(PreciotextBox.Text)));
+            ArticulosdataGridView.DataSource = null;
+            sa.Add(new ServiciosArticulos((int)ServicioscomboBox.SelectedValue, Convert.ToDouble(PreciotextBox.Text)));
+            a.Add(ArticulosBLL.Buscar((int)ServicioscomboBox.SelectedValue));
+            ArticulosdataGridView.DataSource = a;
         }
     }
 }
