@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace BLL
 {
@@ -59,9 +60,10 @@ namespace BLL
                 {
                     articulos = db.Articulo.Find(id);
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    throw;
+                    MessageBox.Show(e.ToString());
+                    //throw;
                 }
                 return articulos;
             }
