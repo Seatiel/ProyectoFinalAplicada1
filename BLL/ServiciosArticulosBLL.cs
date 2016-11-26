@@ -9,14 +9,14 @@ namespace BLL
 {
     public class ServiciosArticulosBLL
     {
-        public static bool Insertar(ServiciosArticulos servicioArticulo)
+        public static bool Insertar(List<ServiciosArticulos> servicioArticulo)
         {
             bool retorno = false;
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    db.ServicioArticulo.Add(servicioArticulo);
+                    db.ServicioArticulo.AddRange(servicioArticulo);                                       
                     db.SaveChanges();
                     retorno = true;
                 }
@@ -28,7 +28,7 @@ namespace BLL
             }
         }
 
-        public static bool Eliminar(int id)
+        public static bool Eliminar(int articuloId)
         {
             bool retorno = false;
             var servicioArticulo = new ServiciosArticulos();
@@ -36,8 +36,7 @@ namespace BLL
             {
                 try
                 {
-                    servicioArticulo = db.ServicioArticulo.Find(id);
-                    db.ServicioArticulo.Remove(servicioArticulo);
+                    db.ServicioArticulo.RemoveRange(db.ServicioArticulo.Where(sa => sa.ArticuloId == articuloId));
                     db.SaveChanges();
                     retorno = true;
                 }
@@ -49,14 +48,14 @@ namespace BLL
             }
         }
 
-        public static ServiciosArticulos Buscar(int id)
+        public static List<ServiciosArticulos> Buscar(int articuloId)
         {
-            var servicioArticulo = new ServiciosArticulos();
+            var servicioArticulo = new List<ServiciosArticulos>();
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    servicioArticulo = db.ServicioArticulo.Find(id);
+                    servicioArticulo = db.ServicioArticulo.Where(sa => sa.ArticuloId == articuloId).ToList();
                 }
                 catch (Exception)
                 {

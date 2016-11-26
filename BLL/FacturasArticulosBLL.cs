@@ -9,14 +9,14 @@ namespace BLL
 {
     public class FacturasArticulosBLL
     {
-        public static bool Insertar(FacturasArticulos facturaArticulos)
+        public static bool Insertar(List<FacturasArticulos> facturaArticulos)
         {
             bool retorno = false;
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    db.FacturaArticulo.Add(facturaArticulos);
+                    db.FacturaArticulo.AddRange(facturaArticulos);
                     db.SaveChanges();
                     retorno = true;
                 }
@@ -28,16 +28,15 @@ namespace BLL
             }
         }
 
-        public static bool Eliminar(int id)
+        public static bool Eliminar(int facturaId)
         {
             bool retorno = false;
-            var facturaArticulos = new FacturasArticulos();
+           
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    facturaArticulos = db.FacturaArticulo.Find(id);
-                    db.FacturaArticulo.Remove(facturaArticulos);
+                    db.FacturaArticulo.RemoveRange(db.FacturaArticulo.Where(fa => fa.FacturaId == facturaId));
                     db.SaveChanges();
                     retorno = true;
                 }
@@ -49,14 +48,14 @@ namespace BLL
             }
         }
 
-        public static FacturasArticulos Buscar(int id)
+        public static List<FacturasArticulos> Buscar(int facturaId)
         {
-            var facturaArticulos = new FacturasArticulos();
+            var facturaArticulos = new List<FacturasArticulos>();
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    facturaArticulos = db.FacturaArticulo.Find(id);
+                    facturaArticulos = db.FacturaArticulo.Where(fa => fa.FacturaId == facturaId).ToList();
                 }
                 catch (Exception)
                 {

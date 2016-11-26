@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -99,6 +100,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1402, 663);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;

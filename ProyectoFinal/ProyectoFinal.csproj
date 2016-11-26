@@ -82,6 +82,12 @@
     <Compile Include="UI\Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Registros\RegistroArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroArticulos.Designer.cs">
+      <DependentUpon>RegistroArticulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\RegistroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="UI\Registros\RegistroFactura.Designer.cs">
       <DependentUpon>RegistroFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroServicios.Designer.cs">
+      <DependentUpon>RegistroServicios.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\RegistroUsuarios.cs">
       <SubType>Form</SubType>
@@ -122,11 +134,20 @@
     <EmbeddedResource Include="UI\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\RegistroArticulos.resx">
+      <DependentUpon>RegistroArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\RegistroClientes.resx">
       <DependentUpon>RegistroClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\RegistroCobro.resx">
+      <DependentUpon>RegistroCobro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\RegistroFactura.resx">
       <DependentUpon>RegistroFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\RegistroServicios.resx">
+      <DependentUpon>RegistroServicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\RegistroUsuarios.resx">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
@@ -176,6 +197,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{ECB3528E-A324-4780-B8C5-74F9D2E87A57}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{E0E780DD-57CB-4A3D-8935-2EA2F227C9FA}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{036F9D96-822E-47B7-9BC5-8EAB1CE367E7}</Project>

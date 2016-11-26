@@ -11,5 +11,13 @@ namespace Entidades
         [Key]
         public int ServiciosId { get; set; }
         public string Nombre { get; set; }
+               
+
+        public Servicios(string v)
+        {
+            this.Nombre = v;
+        }
+
+        
     }
 }
