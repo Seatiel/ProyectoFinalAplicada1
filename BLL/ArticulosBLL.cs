@@ -69,12 +69,22 @@ namespace BLL
             }
         }
 
-        public List<Articulos> GetList()
+        public static List<Articulos> GetList()
         {
             List<Articulos> lista = new List<Articulos>();
-            var db = new LavanderiaDb();
-            lista = db.Articulo.ToList();
-            return lista;
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    lista = db.Articulo.ToList();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                return lista;
+            }
         }
     }
 }

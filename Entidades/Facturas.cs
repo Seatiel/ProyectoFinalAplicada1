@@ -13,5 +13,10 @@ namespace Entidades
         public int ClienteId { get; set; }
         public DateTime Fecha { get; set; }
         public Double Total { get; set; }
+
+        public Facturas()
+        {
+
+        }
     }
 }

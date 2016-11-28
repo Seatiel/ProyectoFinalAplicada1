@@ -86,6 +86,7 @@
             // 
             // ArticulosdataGridView
             // 
+            this.ArticulosdataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ArticulosdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ArticulosdataGridView.Location = new System.Drawing.Point(6, 152);
             this.ArticulosdataGridView.Name = "ArticulosdataGridView";
@@ -105,7 +106,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(50, 125);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(601, 308);
+            this.groupBox1.Size = new System.Drawing.Size(604, 308);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Servicios";
@@ -196,6 +197,7 @@
             this.Buscarbutton.TabIndex = 11;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // RegistroArticulos
             // 

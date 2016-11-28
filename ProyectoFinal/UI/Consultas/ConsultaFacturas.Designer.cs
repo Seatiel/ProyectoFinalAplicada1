@@ -1,6 +1,6 @@
-﻿namespace ProyectoFinal.UI.Registros
+﻿namespace ProyectoFinal.UI.Consultas
 {
-    partial class RegistroCobro
+    partial class ConsultaFacturas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroCobro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaFacturas));
             this.SuspendLayout();
             // 
-            // RegistroCobro
+            // ConsultaFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(923, 648);
-            this.Name = "RegistroCobro";
-            this.Text = "RegistroCobro";
+            this.ClientSize = new System.Drawing.Size(932, 487);
+            this.Name = "ConsultaFacturas";
+            this.Text = "ConsultaFacturas";
             this.ResumeLayout(false);
 
         }

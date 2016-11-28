@@ -15,5 +15,10 @@ namespace Entidades
         public int ServicioId { get; set; }
         public double SubTotal { get; set; }
         public int FacturaId { get; set; }
+
+        public FacturasArticulos()
+        {
+
+        }
     }
 }

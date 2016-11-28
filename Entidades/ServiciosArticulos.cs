@@ -9,9 +9,7 @@ namespace Entidades
 {
     public class ServiciosArticulos
     {
-        [Key]
-
-        [Browsable(false)]
+        [Key] [Browsable(false)]
         public int ServicioArticuloId { get; set; }
         [Browsable(false)]
         public int ArticuloId { get; set; }
@@ -20,9 +18,9 @@ namespace Entidades
 
         public Double Precio { get; set; }
 
-        public ServiciosArticulos(int sevicioId, double precio)
+        public ServiciosArticulos(int sevicioId, Double precio)
         {
-            this.ServicioId = sevicioId;
+            this.ServicioId = sevicioId;            
             this.Precio = precio;
         }
 

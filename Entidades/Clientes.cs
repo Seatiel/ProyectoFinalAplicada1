@@ -13,5 +13,15 @@ namespace Entidades
         public string Nombres { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
+
+        public Clientes(string nombre)
+        {
+            this.Nombres = nombre;            
+        }
+
+        public Clientes()
+        {
+
+        }
     }
 }

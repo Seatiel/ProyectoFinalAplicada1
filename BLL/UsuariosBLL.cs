@@ -83,11 +83,11 @@ namespace BLL
             }
         }
 
-        public static List<Usuarios> GetListUsuarios(string usuario)
+        public static List<Usuarios> GetListNombreUsuarios(string nombreUsuario)
         {
             List<Usuarios> lista = new List<Usuarios>();
             LavanderiaDb db = new LavanderiaDb();
-            lista = db.Usuario.Where(p => p.Nombre == usuario).ToList();
+            lista = db.Usuario.Where(p=> p.NombreUsuario == nombreUsuario).ToList();
             return lista;
         }
 

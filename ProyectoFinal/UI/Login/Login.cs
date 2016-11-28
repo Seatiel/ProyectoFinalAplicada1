@@ -30,7 +30,7 @@ namespace ProyectoFinal.UI.Login
 
         public bool ValidarUsuario()
         {
-            if (UsuariosBLL.GetListUsuarios(NombretextBox.Text).Count() == 0)
+            if (UsuariosBLL.GetListNombreUsuarios(NombretextBox.Text).Count() == 0)
             {
                 MessageBox.Show("Usuario incorrecto o no registrado");
                 return false;
@@ -67,7 +67,8 @@ namespace ProyectoFinal.UI.Login
 
         public void Limpiar()
         {
-            NombretextBox.Text = ClavetextBox.Text = "";
+            NombretextBox.Clear();
+            ClavetextBox.Clear();
         }
 
         private void Cancelarbutton_Click(object sender, EventArgs e)

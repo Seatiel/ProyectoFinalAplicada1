@@ -91,6 +91,5 @@ namespace BLL
             lista = db.Factura.ToList();
             return lista;
         }
-
     }
 }

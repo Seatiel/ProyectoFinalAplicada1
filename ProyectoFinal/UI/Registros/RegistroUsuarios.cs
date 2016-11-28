@@ -22,14 +22,12 @@ namespace ProyectoFinal.UI.Registros
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
             var usuario = new Usuarios();
-
             if (!Validar())
             {
                 MessageBox.Show("Completar todos los datos");
                 return;
             }
             usuario = LlenarCampos();
-
             if (ClavetextBox.Text == ConfirmarClavetextBox.Text)
             {
                 if (UsuariosBLL.Insertar(usuario))
@@ -46,34 +44,40 @@ namespace ProyectoFinal.UI.Registros
         private bool Validar()
         {
             bool retorno = true;
-            if (string.IsNullOrEmpty(NombretextBox.Text))
+            if (string.IsNullOrEmpty(NombreUsuariotextBox.Text))
             {
-                NombreerrorProvider.SetError(NombretextBox, "Debe introducir el Nombre del usuario");
-
-                if (string.IsNullOrEmpty(ClavetextBox.Text))
+                NombreUsuarioerrorProvider.SetError(NombreUsuariotextBox, "Debe introducir el Nombre del usuario");
+                if (string.IsNullOrEmpty(NombretextBox.Text))
                 {
-                    ClaveerrorProvider.SetError(ClavetextBox, "Debe introducir la Clave del usuario");
-                    if (string.IsNullOrEmpty(ConfirmarClavetextBox.Text))
+                    NombreerrorProvider.SetError(NombretextBox, "Debe introducir el nombre del Empleado");
+                    if (string.IsNullOrEmpty(ClavetextBox.Text))
                     {
-                        ConfirmarClaveerrorProvider.SetError(ConfirmarClavetextBox, "Debe introducir la Clave de confirmar del usuario");
+                        ClaveerrorProvider.SetError(ClavetextBox, "Debe introducir la Contraseña");
+                        if (string.IsNullOrEmpty(ConfirmarClavetextBox.Text))
+                        {
+                            ConfirmarClaveerrorProvider.SetError(ConfirmarClavetextBox, "Debe introducir la Contraseña de confirmacion");
+                        }
                     }
+
                 }
                 retorno = false;
             }
             return retorno;
-        }       
-                       
+        }
+
+        private void Cancelarbutton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private Usuarios LlenarCampos()
         {
             var usuario = new Usuarios();
+            usuario.NombreUsuario = NombreUsuariotextBox.Text;
             usuario.Nombre = NombretextBox.Text;
             usuario.Clave = ClavetextBox.Text;
             return usuario;
-        }        
-
-        private void Cancelarbutton_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }        
+        }
     }
 }
+

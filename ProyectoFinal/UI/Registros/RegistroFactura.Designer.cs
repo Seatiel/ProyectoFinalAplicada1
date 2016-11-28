@@ -30,83 +30,93 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroFactura));
             this.ClientegroupBox = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.SeleccionarClientecomboBox = new System.Windows.Forms.ComboBox();
+            this.TelefonotextBox = new System.Windows.Forms.TextBox();
+            this.DirecciontextBox = new System.Windows.Forms.TextBox();
+            this.Buscarbutton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Modificarbutton = new System.Windows.Forms.Button();
+            this.FacturaFechadateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.FacturadataGridView = new System.Windows.Forms.DataGridView();
+            this.Nuevobutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
-            this.Buscarbutton = new System.Windows.Forms.Button();
             this.Agregarbutton = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.FacturaIdtextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.FacturagroupBox = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.ServiciocomboBox = new System.Windows.Forms.ComboBox();
+            this.CantidadtextBox = new System.Windows.Forms.TextBox();
+            this.ArticuloscomboBox = new System.Windows.Forms.ComboBox();
             this.ClientegroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FacturadataGridView)).BeginInit();
+            this.FacturagroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // ClientegroupBox
             // 
             this.ClientegroupBox.BackColor = System.Drawing.Color.Transparent;
-            this.ClientegroupBox.Controls.Add(this.comboBox1);
-            this.ClientegroupBox.Controls.Add(this.textBox5);
-            this.ClientegroupBox.Controls.Add(this.textBox6);
+            this.ClientegroupBox.Controls.Add(this.SeleccionarClientecomboBox);
+            this.ClientegroupBox.Controls.Add(this.TelefonotextBox);
+            this.ClientegroupBox.Controls.Add(this.DirecciontextBox);
+            this.ClientegroupBox.Controls.Add(this.Buscarbutton);
             this.ClientegroupBox.Controls.Add(this.label7);
-            this.ClientegroupBox.Controls.Add(this.textBox7);
-            this.ClientegroupBox.Controls.Add(this.label5);
             this.ClientegroupBox.Controls.Add(this.label8);
             this.ClientegroupBox.Controls.Add(this.label6);
             this.ClientegroupBox.Font = new System.Drawing.Font("Constantia", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClientegroupBox.Location = new System.Drawing.Point(12, 88);
+            this.ClientegroupBox.Location = new System.Drawing.Point(12, 100);
             this.ClientegroupBox.Name = "ClientegroupBox";
-            this.ClientegroupBox.Size = new System.Drawing.Size(1080, 236);
+            this.ClientegroupBox.Size = new System.Drawing.Size(1086, 180);
             this.ClientegroupBox.TabIndex = 6;
             this.ClientegroupBox.TabStop = false;
             this.ClientegroupBox.Text = "Clientes ";
             // 
-            // comboBox1
+            // SeleccionarClientecomboBox
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SeleccionarClientecomboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(177, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(706, 30);
-            this.comboBox1.TabIndex = 14;
+            this.SeleccionarClientecomboBox.FormattingEnabled = true;
+            this.SeleccionarClientecomboBox.Location = new System.Drawing.Point(182, 31);
+            this.SeleccionarClientecomboBox.Name = "SeleccionarClientecomboBox";
+            this.SeleccionarClientecomboBox.Size = new System.Drawing.Size(712, 30);
+            this.SeleccionarClientecomboBox.TabIndex = 14;
+            this.SeleccionarClientecomboBox.SelectedIndexChanged += new System.EventHandler(this.SeleccionarClientecomboBox_SelectedIndexChanged);
             // 
-            // textBox5
+            // TelefonotextBox
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TelefonotextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(126, 163);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(757, 29);
-            this.textBox5.TabIndex = 14;
+            this.TelefonotextBox.Enabled = false;
+            this.TelefonotextBox.Location = new System.Drawing.Point(182, 121);
+            this.TelefonotextBox.Name = "TelefonotextBox";
+            this.TelefonotextBox.Size = new System.Drawing.Size(712, 29);
+            this.TelefonotextBox.TabIndex = 14;
             // 
-            // textBox6
+            // DirecciontextBox
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.DirecciontextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(126, 121);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(757, 29);
-            this.textBox6.TabIndex = 13;
+            this.DirecciontextBox.Enabled = false;
+            this.DirecciontextBox.Location = new System.Drawing.Point(182, 79);
+            this.DirecciontextBox.Name = "DirecciontextBox";
+            this.DirecciontextBox.Size = new System.Drawing.Size(712, 29);
+            this.DirecciontextBox.TabIndex = 13;
+            // 
+            // Buscarbutton
+            // 
+            this.Buscarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Buscarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscarbutton.Location = new System.Drawing.Point(956, 17);
+            this.Buscarbutton.Name = "Buscarbutton";
+            this.Buscarbutton.Size = new System.Drawing.Size(124, 40);
+            this.Buscarbutton.TabIndex = 12;
+            this.Buscarbutton.Text = "Buscar";
+            this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // label7
             // 
@@ -114,35 +124,15 @@
             this.label7.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(7, 36);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(164, 21);
+            this.label7.Size = new System.Drawing.Size(169, 21);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Seleccionar Cliente";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(126, 76);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(757, 29);
-            this.textBox7.TabIndex = 12;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(19, 76);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 21);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Nombre:";
+            this.label7.Text = "Seleccionar Cliente:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(13, 163);
+            this.label8.Location = new System.Drawing.Point(90, 121);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 21);
             this.label8.TabIndex = 11;
@@ -152,48 +142,49 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 121);
+            this.label6.Location = new System.Drawing.Point(83, 79);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 21);
             this.label6.TabIndex = 10;
             this.label6.Text = "Direccion:";
             // 
-            // dateTimePicker1
+            // FacturaFechadateTimePicker
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.FacturaFechadateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(745, 33);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
-            this.dateTimePicker1.TabIndex = 7;
+            this.FacturaFechadateTimePicker.Location = new System.Drawing.Point(777, 33);
+            this.FacturaFechadateTimePicker.Name = "FacturaFechadateTimePicker";
+            this.FacturaFechadateTimePicker.Size = new System.Drawing.Size(265, 22);
+            this.FacturaFechadateTimePicker.TabIndex = 7;
             // 
-            // dataGridView1
+            // FacturadataGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.FacturadataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 134);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(992, 134);
-            this.dataGridView1.TabIndex = 8;
+            this.FacturadataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.FacturadataGridView.Location = new System.Drawing.Point(6, 124);
+            this.FacturadataGridView.Name = "FacturadataGridView";
+            this.FacturadataGridView.RowTemplate.Height = 24;
+            this.FacturadataGridView.Size = new System.Drawing.Size(1074, 149);
+            this.FacturadataGridView.TabIndex = 8;
             // 
-            // Modificarbutton
+            // Nuevobutton
             // 
-            this.Modificarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Modificarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Modificarbutton.Location = new System.Drawing.Point(117, 662);
-            this.Modificarbutton.Name = "Modificarbutton";
-            this.Modificarbutton.Size = new System.Drawing.Size(121, 44);
-            this.Modificarbutton.TabIndex = 9;
-            this.Modificarbutton.Text = "Modificar";
-            this.Modificarbutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Nuevobutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nuevobutton.Location = new System.Drawing.Point(216, 677);
+            this.Nuevobutton.Name = "Nuevobutton";
+            this.Nuevobutton.Size = new System.Drawing.Size(121, 44);
+            this.Nuevobutton.TabIndex = 9;
+            this.Nuevobutton.Text = "Nuevo";
+            this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // Guardarbutton
             // 
             this.Guardarbutton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Guardarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardarbutton.Location = new System.Drawing.Point(305, 662);
+            this.Guardarbutton.Location = new System.Drawing.Point(488, 677);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(121, 44);
             this.Guardarbutton.TabIndex = 10;
@@ -204,23 +195,12 @@
             // 
             this.Eliminarbutton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Eliminarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Eliminarbutton.Location = new System.Drawing.Point(527, 662);
+            this.Eliminarbutton.Location = new System.Drawing.Point(757, 677);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(121, 44);
             this.Eliminarbutton.TabIndex = 11;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.UseVisualStyleBackColor = true;
-            // 
-            // Buscarbutton
-            // 
-            this.Buscarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Buscarbutton.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buscarbutton.Location = new System.Drawing.Point(696, 662);
-            this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(121, 44);
-            this.Buscarbutton.TabIndex = 12;
-            this.Buscarbutton.Text = "Buscar";
-            this.Buscarbutton.UseVisualStyleBackColor = true;
             // 
             // Agregarbutton
             // 
@@ -232,15 +212,16 @@
             this.Agregarbutton.TabIndex = 13;
             this.Agregarbutton.Text = "Agregar";
             this.Agregarbutton.UseVisualStyleBackColor = true;
+            this.Agregarbutton.Click += new System.EventHandler(this.Agregarbutton_Click);
             // 
-            // textBox8
+            // FacturaIdtextBox
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.FacturaIdtextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(852, 8);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(158, 22);
-            this.textBox8.TabIndex = 8;
+            this.FacturaIdtextBox.Location = new System.Drawing.Point(884, 8);
+            this.FacturaIdtextBox.Name = "FacturaIdtextBox";
+            this.FacturaIdtextBox.Size = new System.Drawing.Size(158, 22);
+            this.FacturaIdtextBox.TabIndex = 8;
             // 
             // label9
             // 
@@ -249,29 +230,28 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(753, 9);
+            this.label9.Location = new System.Drawing.Point(785, 9);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 21);
             this.label9.TabIndex = 7;
             this.label9.Text = "FacturaId:";
             // 
-            // groupBox1
+            // FacturagroupBox
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.Agregarbutton);
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 352);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1086, 291);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.FacturagroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.FacturagroupBox.Controls.Add(this.label4);
+            this.FacturagroupBox.Controls.Add(this.label3);
+            this.FacturagroupBox.Controls.Add(this.label2);
+            this.FacturagroupBox.Controls.Add(this.ServiciocomboBox);
+            this.FacturagroupBox.Controls.Add(this.CantidadtextBox);
+            this.FacturagroupBox.Controls.Add(this.ArticuloscomboBox);
+            this.FacturagroupBox.Controls.Add(this.Agregarbutton);
+            this.FacturagroupBox.Controls.Add(this.FacturadataGridView);
+            this.FacturagroupBox.Location = new System.Drawing.Point(12, 352);
+            this.FacturagroupBox.Name = "FacturagroupBox";
+            this.FacturagroupBox.Size = new System.Drawing.Size(1086, 291);
+            this.FacturagroupBox.TabIndex = 14;
+            this.FacturagroupBox.TabStop = false;
             // 
             // label4
             // 
@@ -306,35 +286,38 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Articulo ";
             // 
-            // comboBox3
+            // ServiciocomboBox
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ServiciocomboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(665, 68);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(179, 24);
-            this.comboBox3.TabIndex = 16;
+            this.ServiciocomboBox.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServiciocomboBox.FormattingEnabled = true;
+            this.ServiciocomboBox.Location = new System.Drawing.Point(665, 68);
+            this.ServiciocomboBox.Name = "ServiciocomboBox";
+            this.ServiciocomboBox.Size = new System.Drawing.Size(179, 29);
+            this.ServiciocomboBox.TabIndex = 16;
             // 
-            // textBox1
+            // CantidadtextBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CantidadtextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(383, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(119, 22);
-            this.textBox1.TabIndex = 15;
+            this.CantidadtextBox.Enabled = false;
+            this.CantidadtextBox.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CantidadtextBox.Location = new System.Drawing.Point(383, 68);
+            this.CantidadtextBox.Name = "CantidadtextBox";
+            this.CantidadtextBox.Size = new System.Drawing.Size(142, 28);
+            this.CantidadtextBox.TabIndex = 15;
             // 
-            // comboBox2
+            // ArticuloscomboBox
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ArticuloscomboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(38, 68);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(179, 24);
-            this.comboBox2.TabIndex = 15;
+            this.ArticuloscomboBox.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ArticuloscomboBox.FormattingEnabled = true;
+            this.ArticuloscomboBox.Location = new System.Drawing.Point(38, 68);
+            this.ArticuloscomboBox.Name = "ArticuloscomboBox";
+            this.ArticuloscomboBox.Size = new System.Drawing.Size(179, 29);
+            this.ArticuloscomboBox.TabIndex = 15;
             // 
             // RegistroFactura
             // 
@@ -343,22 +326,21 @@
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1110, 733);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.FacturagroupBox);
+            this.Controls.Add(this.FacturaIdtextBox);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
-            this.Controls.Add(this.Modificarbutton);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.Nuevobutton);
+            this.Controls.Add(this.FacturaFechadateTimePicker);
             this.Controls.Add(this.ClientegroupBox);
             this.Name = "RegistroFactura";
             this.Text = "RegistroFactura";
             this.ClientegroupBox.ResumeLayout(false);
             this.ClientegroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FacturadataGridView)).EndInit();
+            this.FacturagroupBox.ResumeLayout(false);
+            this.FacturagroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,28 +349,26 @@
         #endregion
         private System.Windows.Forms.GroupBox ClientegroupBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button Modificarbutton;
+        private System.Windows.Forms.DateTimePicker FacturaFechadateTimePicker;
+        private System.Windows.Forms.DataGridView FacturadataGridView;
+        private System.Windows.Forms.Button Nuevobutton;
         private System.Windows.Forms.Button Guardarbutton;
         private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.Button Buscarbutton;
         private System.Windows.Forms.Button Agregarbutton;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox TelefonotextBox;
+        private System.Windows.Forms.TextBox DirecciontextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox FacturaIdtextBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox SeleccionarClientecomboBox;
+        private System.Windows.Forms.GroupBox FacturagroupBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox ServiciocomboBox;
+        private System.Windows.Forms.TextBox CantidadtextBox;
+        private System.Windows.Forms.ComboBox ArticuloscomboBox;
     }
 }

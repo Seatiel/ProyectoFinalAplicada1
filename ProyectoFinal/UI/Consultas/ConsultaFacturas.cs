@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal.UI.Consultas
 {
-    public partial class ConsultaUsuarios : Form
+    public partial class ConsultaFacturas : Form
     {
-        public ConsultaUsuarios()
+        public ConsultaFacturas()
         {
             InitializeComponent();
         }

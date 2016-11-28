@@ -69,19 +69,7 @@ namespace ProyectoFinal.UI.Registros
 
         private void Modificarbutton_Click(object sender, EventArgs e)
         {
-            int Id = Convert.ToInt32(ClienteIdtextBox.Text);
-            string Nombres = NombrestextBox.Text;
-            string Direccion = DirecciontextBox.Text;
-            string Telefono = TelefonotextBox.Text;
-
-            var cliente = ClientesBLL.Buscar(Id);
-
-            if (Id != null)
-            {
-                ClientesBLL.Modificar(Id,Nombres,Direccion,Telefono);
-                MessageBox.Show("Cliente Modificado");
-                Limpiar();                             
-            }            
+            Limpiar();           
         }
     }
 }

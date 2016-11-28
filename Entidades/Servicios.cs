@@ -12,17 +12,14 @@ namespace Entidades
         public int ServicioId { get; set; }
         public string Nombre { get; set; }
                
-
-        public Servicios(string v)
+        public Servicios(string nombre)
         {
-            this.Nombre = v;
+            this.Nombre = nombre;
         }
 
         public Servicios()
         {
 
-        }
-
-        
+        }        
     }
 }

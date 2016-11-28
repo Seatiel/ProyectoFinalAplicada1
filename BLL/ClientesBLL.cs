@@ -93,10 +93,19 @@ namespace BLL
         public static List<Clientes> GetList()
         {
             List<Clientes> lista = new List<Clientes>();
-            var db = new LavanderiaDb();
-            lista = db.Cliente.ToList();
-            return lista;
-        }
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    lista = db.Cliente.ToList();
+                }
+                catch (Exception)
+                {
 
+                    throw;
+                }
+                return lista;
+            }                         
+        }
     }
 }

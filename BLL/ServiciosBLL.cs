@@ -71,10 +71,20 @@ namespace BLL
         public static List<Servicios> GetList()
         {
             List<Servicios> lista = new List<Servicios>();
-            var db = new LavanderiaDb();
-            lista = db.Servicio.ToList();
-            return lista;
-        }
 
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    lista = db.Servicio.ToList();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                return lista;
+            }
+        }
     }
 }

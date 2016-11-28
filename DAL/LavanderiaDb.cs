@@ -18,9 +18,6 @@ namespace DAL
         public DbSet<Servicios> Servicio { get; set; }
         public DbSet<Articulos> Articulo { get; set; }
         public DbSet<FacturasArticulos> FacturaArticulo { get; set; }
-        public DbSet<ServiciosArticulos> ServicioArticulo { get; set; }
-
-
-
+        public DbSet<ServiciosArticulos> ServicioArticulo { get; set; }     
     }    
 }

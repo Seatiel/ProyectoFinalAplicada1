@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -17,7 +18,11 @@ namespace BLL
             {
                 try
                 {
-                    db.ServicioArticulo.AddRange(servicioArticulo);                                       
+                    db.ServicioArticulo.AddRange(servicioArticulo);
+                    //foreach (var servicio in servicioArticulo)
+                    //{
+                    //    db.Entry(servicio).State = System.Data.Entity.EntityState.Unchanged;
+                    //}
                     db.SaveChanges();
                     retorno = true;
                 }
@@ -67,12 +72,21 @@ namespace BLL
             }
         }
 
-        public List<ServiciosArticulos> GetList()
+        /*public List<ServiciosArticulos> GetList()
         {
             List<ServiciosArticulos> lista = new List<ServiciosArticulos>();
-            var db = new LavanderiaDb();
-            lista = db.ServicioArticulo.ToList();
-            return lista;
-        }
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    lista = db.ServicioArticulo.ToList();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                return lista;
+            }                       
+        }*/               
     }
 }
