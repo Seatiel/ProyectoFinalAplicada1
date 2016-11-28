@@ -14,6 +14,7 @@ namespace ProyectoFinal.UI.Registros
 {
     public partial class RegistroArticulos : Form
     {
+
         private List<ServiciosArticulos> sa;
 
         public RegistroArticulos()
