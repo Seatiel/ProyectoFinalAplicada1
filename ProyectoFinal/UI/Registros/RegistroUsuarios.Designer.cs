@@ -215,6 +215,7 @@
             this.Name = "RegistroUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroUsuarios";
+            this.Load += new System.EventHandler(this.RegistroUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NombreerrorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClaveerrorProvider)).EndInit();

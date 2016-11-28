@@ -33,18 +33,14 @@ namespace BLL
         }
 
         public static bool Eliminar(Usuarios usuario)
-        {
-            //var usuario = new Usuarios();
+        {            
             bool retorno = false;
             using (var db = new LavanderiaDb())
             {
                 try
                 {
                     db.Entry(usuario).State = EntityState.Deleted;
-                    db.SaveChanges();
-                    //usuario = db.Usuario.Find(id);
-                    //db.Usuario.Remove(usuario);
-                    //db.SaveChanges();
+                    db.SaveChanges();                    
                     retorno = true;
                 }
                 catch (Exception)

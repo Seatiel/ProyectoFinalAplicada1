@@ -24,6 +24,13 @@ namespace ProyectoFinal.UI.Registros
             sa = new List<ServiciosArticulos>();
         }
 
+        public void Validar()
+        {
+            Utilidades ut = new Utilidades(ArticuloIdtextBox, "N");
+            Utilidades ut1 = new Utilidades(NombreArticulotextBox, "L");
+            Utilidades ut2 = new Utilidades(PreciotextBox, "N");
+        }
+
         public void LlenarArticulo()
         {
             var lista = ServiciosBLL.GetList();
@@ -138,6 +145,11 @@ namespace ProyectoFinal.UI.Registros
                 ArticulosdataGridView.DataSource = null;
                 ArticulosdataGridView.DataSource = sa;
             }
+        }
+
+        private void RegistroArticulos_Load(object sender, EventArgs e)
+        {
+            Validar();
         }
     }
 }

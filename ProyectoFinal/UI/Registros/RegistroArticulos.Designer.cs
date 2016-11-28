@@ -232,6 +232,7 @@
             this.Controls.Add(this.label1);
             this.Name = "RegistroArticulos";
             this.Text = "RegistroArticulos";
+            this.Load += new System.EventHandler(this.RegistroArticulos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ArticulosdataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

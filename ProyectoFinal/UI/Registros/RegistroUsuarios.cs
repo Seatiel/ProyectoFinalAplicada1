@@ -19,6 +19,14 @@ namespace ProyectoFinal.UI.Registros
             InitializeComponent();
         }
 
+        public void ValidarCampos()
+        {
+            Utilidades ut = new Utilidades(NombreUsuariotextBox, "LN");
+            Utilidades ut1 = new Utilidades(NombretextBox, "L");
+            Utilidades ut2 = new Utilidades(ClavetextBox, "LN");
+            Utilidades ut3 = new Utilidades(ConfirmarClavetextBox, "LN");
+        }
+
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
             var usuario = new Usuarios();
@@ -77,6 +85,11 @@ namespace ProyectoFinal.UI.Registros
             usuario.Nombre = NombretextBox.Text;
             usuario.Clave = ClavetextBox.Text;
             return usuario;
+        }
+
+        private void RegistroUsuarios_Load(object sender, EventArgs e)
+        {
+            ValidarCampos();
         }
     }
 }

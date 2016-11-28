@@ -212,6 +212,7 @@
             this.Name = "RegistroClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "RegistroClientes";
+            this.Load += new System.EventHandler(this.RegistroClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

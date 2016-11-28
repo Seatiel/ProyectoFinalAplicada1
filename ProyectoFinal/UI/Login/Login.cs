@@ -17,6 +17,12 @@ namespace ProyectoFinal.UI.Login
             InitializeComponent();
         }
 
+        public void ValidarCampos()
+        {
+            Utilidades ut = new Utilidades(NombretextBox, "LN");
+            Utilidades ut1 = new Utilidades(ClavetextBox, "LN");            
+        }
+
         private void Loginbutton_Click(object sender, EventArgs e)
         {
             Validar();
@@ -82,6 +88,11 @@ namespace ProyectoFinal.UI.Login
             Limpiar();
             Registros.RegistroUsuarios ru = new Registros.RegistroUsuarios();
             ru.Show();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            ValidarCampos();
         }
     }
 }

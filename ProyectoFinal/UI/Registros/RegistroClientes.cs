@@ -15,9 +15,9 @@ namespace ProyectoFinal.UI.Registros
     {
         public RegistroClientes()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
-
+        
         private void Guardarbutton_Click(object sender, EventArgs e)
         {
             var cliente = new Clientes();
@@ -27,6 +27,13 @@ namespace ProyectoFinal.UI.Registros
                 Limpiar();
                 MessageBox.Show("Cliente Guardado");
             }
+        }
+
+        public void Validar()
+        {
+            Utilidades ut = new Utilidades(ClienteIdtextBox, "N");
+            Utilidades ut1 = new Utilidades(NombrestextBox,"L");
+            Utilidades ut2 = new Utilidades(DirecciontextBox, "LN");           
         }
 
         public Clientes LlenarCampos()
@@ -90,6 +97,11 @@ namespace ProyectoFinal.UI.Registros
         private void Modificarbutton_Click(object sender, EventArgs e)
         {
             Limpiar();           
+        }
+
+        private void RegistroClientes_Load(object sender, EventArgs e)
+        {
+            Validar();
         }
     }
 }
