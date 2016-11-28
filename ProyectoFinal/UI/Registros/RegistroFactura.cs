@@ -61,8 +61,8 @@ namespace ProyectoFinal.UI.Registros
                 ArticulosBLL.Insertar(articulo6);
                 ArticulosBLL.Insertar(articulo7);                
             }
-            ArticuloscomboBox.DisplayMember = "Nombres";
             ArticuloscomboBox.ValueMember = "ArticuloId";
+            ArticuloscomboBox.DisplayMember = "Nombre";
             ArticuloscomboBox.DataSource = lista;
         }
 
@@ -81,8 +81,8 @@ namespace ProyectoFinal.UI.Registros
                 ServiciosBLL.Insertar(servicios3);
             
             }
-            ServiciocomboBox.DisplayMember = "Nombres";            
             ServiciocomboBox.ValueMember = "ServicioId";
+            ServiciocomboBox.DisplayMember = "Nombre";            
             ServiciocomboBox.DataSource = lista;
         }
 
@@ -111,12 +111,12 @@ namespace ProyectoFinal.UI.Registros
         private void Limpiar()
         {
             FacturaIdtextBox.Clear();
-            SeleccionarClientecomboBox.SelectedIndex = 0;            
+            SeleccionarClientecomboBox.SelectedValue = 1;            
             DirecciontextBox.Clear();
             TelefonotextBox.Clear();
-            ArticuloscomboBox.SelectedIndex = 0;
+            ArticuloscomboBox.SelectedValue = 1;
             CantidadtextBox.Clear();
-            ServiciocomboBox.SelectedIndex = 0;
+            ServiciocomboBox.SelectedValue = 1;
             FacturaFechadateTimePicker.Value = DateTime.Today;
             FacturadataGridView.DataSource = null;
         }
