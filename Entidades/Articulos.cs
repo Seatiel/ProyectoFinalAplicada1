@@ -8,12 +8,11 @@ namespace Entidades
 {
     public class Articulos
     {
-        private string v;
-
         [Key]
         public int ArticuloId { get; set; }
         public string Nombre { get; set; }
 
+        
 
         public Articulos(int id, string nombre)
         {

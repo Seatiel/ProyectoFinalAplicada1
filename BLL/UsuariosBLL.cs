@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 
@@ -16,7 +17,10 @@ namespace BLL
             {
                 try
                 {
-                    db.Usuario.Add(usuario);
+                    if (Buscar(usuario.UsuarioId) == null)
+                        db.Usuario.Add(usuario);
+                    else
+                        db.Entry(usuario).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                     retorno = true;
                 }
@@ -28,22 +32,26 @@ namespace BLL
             }
         }
 
-        public static Usuarios Eliminar(int id)
+        public static bool Eliminar(Usuarios usuario)
         {
-            var usuario = new Usuarios();
+            //var usuario = new Usuarios();
+            bool retorno = false;
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    usuario = db.Usuario.Find(id);
-                    db.Usuario.Remove(usuario);
+                    db.Entry(usuario).State = EntityState.Deleted;
                     db.SaveChanges();
+                    //usuario = db.Usuario.Find(id);
+                    //db.Usuario.Remove(usuario);
+                    //db.SaveChanges();
+                    retorno = true;
                 }
                 catch (Exception)
                 {
                     throw;
                 }
-                return usuario;
+                return retorno;
             }
         }
 
@@ -64,48 +72,91 @@ namespace BLL
             }
         }
 
-        public static Usuarios Modificar(int id)
-        {
-            var usuario = new Usuarios();
-            using (var db = new LavanderiaDb())
-            {
-                try
-                {
-                    usuario = db.Usuario.Find(id);
-                    db.Usuario.Add(usuario);
-                    db.SaveChanges();
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
-                return usuario;
-            }
-        }
+        //public static Usuarios Modificar(int id)
+        //{
+        //    var usuario = new Usuarios();
+        //    using (var db = new LavanderiaDb())
+        //    {
+        //        try
+        //        {
+        //            usuario = db.Usuario.Find(id);
+        //            db.Usuario.Add(usuario);
+        //            db.SaveChanges();
+        //        }
+        //        catch (Exception)
+        //        {
+        //            throw;
+        //        }
+        //        return usuario;
+        //    }
+        //}
 
         public static List<Usuarios> GetListNombreUsuarios(string nombreUsuario)
         {
             List<Usuarios> lista = new List<Usuarios>();
-            LavanderiaDb db = new LavanderiaDb();
-            lista = db.Usuario.Where(p=> p.NombreUsuario == nombreUsuario).ToList();
-            return lista;
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    //if (db.Usuario.Where(u => u.NombreUsuario == nombreUsuario).Count() > 0)
+                    //    lista = db.Usuario.Where(u => u.NombreUsuario == nombreUsuario).ToList();
+                    //else
+                    //    lista = null;
+                    lista = db.Usuario.Where(u => u.NombreUsuario == nombreUsuario).ToList();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                return lista;
+            }
+
+
         }
 
         public static List<Usuarios> GetListClave(string clave)
         {
             List<Usuarios> lista = new List<Usuarios>();
-            LavanderiaDb db = new LavanderiaDb();
-            lista = db.Usuario.Where(p => p.Clave == clave).ToList();
-            return lista;
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    //if (db.Usuario.Where(u => u.Clave == clave).Count() > 0)
+                    //    lista = db.Usuario.Where(u => u.Clave == clave).ToList();
+                    //else
+                    //    lista = null;
+                    lista = db.Usuario.Where(c => c.Clave == clave).ToList();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                return lista;
+            }
+
+
         }
 
         public static List<Usuarios> GetList()
         {
             List<Usuarios> lista = new List<Usuarios>();
-            var db = new LavanderiaDb();
-            lista = db.Usuario.ToList();
-            return lista;
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    if (db.Usuario.ToList().Count() > 0)
+                        lista = db.Usuario.ToList();
+                    else
+                        lista = null;
+                    //lista = db.Usuario.ToList();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                return lista;
+            }
         }
-
     }
 }

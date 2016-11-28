@@ -19,9 +19,22 @@ namespace Entidades
             this.Nombres = nombre;            
         }
 
+        public Clientes(int clienteId)
+        {
+            this.ClienteId = clienteId;
+        }
+
         public Clientes()
         {
 
+        }
+
+        public Clientes(int clienteId, string nombre, string direccion, string telefono)
+        {
+            this.ClienteId = clienteId;
+            this.Nombres = nombre;
+            this.Direccion = direccion;
+            this.Telefono = telefono;
         }
     }
 }

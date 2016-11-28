@@ -36,12 +36,12 @@
             this.ClienteIdtextBox = new System.Windows.Forms.TextBox();
             this.NombrestextBox = new System.Windows.Forms.TextBox();
             this.DirecciontextBox = new System.Windows.Forms.TextBox();
-            this.TelefonotextBox = new System.Windows.Forms.TextBox();
             this.Modificarbutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TelefonomaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,13 +110,6 @@
             this.DirecciontextBox.Size = new System.Drawing.Size(313, 22);
             this.DirecciontextBox.TabIndex = 6;
             // 
-            // TelefonotextBox
-            // 
-            this.TelefonotextBox.Location = new System.Drawing.Point(165, 275);
-            this.TelefonotextBox.Name = "TelefonotextBox";
-            this.TelefonotextBox.Size = new System.Drawing.Size(313, 22);
-            this.TelefonotextBox.TabIndex = 7;
-            // 
             // Modificarbutton
             // 
             this.Modificarbutton.BackColor = System.Drawing.Color.Transparent;
@@ -172,7 +165,7 @@
             this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Buscarbutton.Location = new System.Drawing.Point(481, 140);
             this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(131, 47);
+            this.Buscarbutton.Size = new System.Drawing.Size(139, 47);
             this.Buscarbutton.TabIndex = 11;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -189,18 +182,26 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // TelefonomaskedTextBox
+            // 
+            this.TelefonomaskedTextBox.Location = new System.Drawing.Point(165, 276);
+            this.TelefonomaskedTextBox.Mask = "(999)000-0000";
+            this.TelefonomaskedTextBox.Name = "TelefonomaskedTextBox";
+            this.TelefonomaskedTextBox.Size = new System.Drawing.Size(313, 22);
+            this.TelefonomaskedTextBox.TabIndex = 13;
+            // 
             // RegistroClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(682, 453);
+            this.Controls.Add(this.TelefonomaskedTextBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
             this.Controls.Add(this.Modificarbutton);
-            this.Controls.Add(this.TelefonotextBox);
             this.Controls.Add(this.DirecciontextBox);
             this.Controls.Add(this.NombrestextBox);
             this.Controls.Add(this.ClienteIdtextBox);
@@ -226,11 +227,11 @@
         private System.Windows.Forms.TextBox ClienteIdtextBox;
         private System.Windows.Forms.TextBox NombrestextBox;
         private System.Windows.Forms.TextBox DirecciontextBox;
-        private System.Windows.Forms.TextBox TelefonotextBox;
         private System.Windows.Forms.Button Modificarbutton;
         private System.Windows.Forms.Button Guardarbutton;
         private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.Button Buscarbutton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MaskedTextBox TelefonomaskedTextBox;
     }
 }

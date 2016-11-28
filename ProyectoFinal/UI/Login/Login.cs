@@ -30,16 +30,17 @@ namespace ProyectoFinal.UI.Login
 
         public bool ValidarUsuario()
         {
-            if (UsuariosBLL.GetListNombreUsuarios(NombretextBox.Text).Count() == 0)
+            if (UsuariosBLL.GetListNombreUsuarios(NombretextBox.Text).Count() > 0)
             {
                 MessageBox.Show("Usuario incorrecto o no registrado");
                 return false;
             }
             return true;
         }
+
         public bool ValidarClave()
         {
-            if (UsuariosBLL.GetListClave(ClavetextBox.Text).Count() == 0)
+            if (UsuariosBLL.GetListClave(ClavetextBox.Text).Count() > 0)
             {
                 MessageBox.Show("Contraseña incorrecta");
                 return false;

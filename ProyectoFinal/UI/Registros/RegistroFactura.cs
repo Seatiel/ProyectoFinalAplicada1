@@ -1,6 +1,5 @@
 ﻿using Entidades;
 using BLL;
-using Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,20 +18,20 @@ namespace ProyectoFinal.UI.Registros
         public RegistroFactura()
         {
             InitializeComponent();
-            fa = new List<FacturasArticulos>();
             LlenarClientes();
             LlenarArticulos();
             LlenarServicios();
-        }     
+            fa = new List<FacturasArticulos>();
+        }
 
         public void LlenarClientes()
         {
             var lista = ClientesBLL.GetList();
             if (lista.Count <= 0)
             {
-                var cliente = new Clientes("Juan Perez");                               
+                var cliente = new Clientes("Juan Perez");
 
-                ClientesBLL.Insertar(cliente);                               
+                ClientesBLL.Insertar(cliente);
             }
             SeleccionarClientecomboBox.ValueMember = "ClienteId";
             SeleccionarClientecomboBox.DisplayMember = "Nombres";
@@ -51,7 +50,7 @@ namespace ProyectoFinal.UI.Registros
                 var articulo5 = new Articulos("Corcha");
                 var articulo6 = new Articulos("Corbata");
                 var articulo7 = new Articulos("Corcha");
-                
+
 
                 ArticulosBLL.Insertar(articulo);
                 ArticulosBLL.Insertar(articulo2);
@@ -59,7 +58,7 @@ namespace ProyectoFinal.UI.Registros
                 ArticulosBLL.Insertar(articulo4);
                 ArticulosBLL.Insertar(articulo5);
                 ArticulosBLL.Insertar(articulo6);
-                ArticulosBLL.Insertar(articulo7);                
+                ArticulosBLL.Insertar(articulo7);
             }
             ArticuloscomboBox.ValueMember = "ArticuloId";
             ArticuloscomboBox.DisplayMember = "Nombre";
@@ -79,27 +78,65 @@ namespace ProyectoFinal.UI.Registros
                 ServiciosBLL.Insertar(servicios);
                 ServiciosBLL.Insertar(servicios2);
                 ServiciosBLL.Insertar(servicios3);
-            
+
             }
             ServiciocomboBox.ValueMember = "ServicioId";
-            ServiciocomboBox.DisplayMember = "Nombre";            
+            ServiciocomboBox.DisplayMember = "Nombre";
             ServiciocomboBox.DataSource = lista;
         }
 
         public void LlenarCampos(FacturasArticulos fa)
-        {       
+        {
+            CantidadtextBox.Text = fa.CantidadArticulos.ToString();
+            ArticuloscomboBox.SelectedValue = fa.ArticuloId;
+            ServiciocomboBox.SelectedValue = fa.ServicioId;
+        }
 
+        private Facturas LlenarCampos()
+        {
+            Facturas f = new Facturas();
+            f.Fecha = FacturaFechadateTimePicker.Value;
+            f.FacturaId = Convert.ToInt32(FacturaIdtextBox.Text);
+            return f;
         }
 
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
-            
+
         }
+
+
 
         private void Agregarbutton_Click(object sender, EventArgs e)
         {
 
+
+            fa.Add(new FacturasArticulos((int)ArticuloscomboBox.SelectedValue, Convert.ToInt32(CantidadtextBox.Text), (int)ServiciocomboBox.SelectedValue));
+            FacturadataGridView.DataSource = null;
+            FacturadataGridView.DataSource = fa;
+
+            //if (!string.IsNullOrEmpty(ArticuloscomboBox.Text))
+            //{
+            //    if (!string.IsNullOrEmpty(CantidadtextBox.Text))
+            //    {
+            //        if (!string.IsNullOrEmpty(ServiciocomboBox.Text))
+            //        {
+            //            var fa = new FacturasArticulos(ArticuloscomboBox.Text, ToInt(CantidadtextBox.Text), ServiciocomboBox.Text);
+            //            if (!string.IsNullOrEmpty(PropietariotextBox.Text))
+            //                fa.Propietario = PropietariotextBox.Text;
+            //            lista.Add(finca);
+            //            FincasdataGridView.DataSource = null;
+            //            FincasdataGridView.DataSource = lista;
+
+            //        }
+            //        else { }
+            //    }
+            //    else { }
+            //}
+            //else { }
         }
+
+
 
         private int ToInt(string texto)
         {
@@ -111,19 +148,19 @@ namespace ProyectoFinal.UI.Registros
         private void Limpiar()
         {
             FacturaIdtextBox.Clear();
-            SeleccionarClientecomboBox.SelectedValue = 1;            
+            SeleccionarClientecomboBox.SelectedIndex = 0;
             DirecciontextBox.Clear();
             TelefonotextBox.Clear();
-            ArticuloscomboBox.SelectedValue = 1;
+            ArticuloscomboBox.SelectedIndex = 0;
             CantidadtextBox.Clear();
-            ServiciocomboBox.SelectedValue = 1;
+            ServiciocomboBox.SelectedIndex = 0;
             FacturaFechadateTimePicker.Value = DateTime.Today;
             FacturadataGridView.DataSource = null;
         }
 
         private void SeleccionarClientecomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var cliente = ClientesBLL.Buscar((int) SeleccionarClientecomboBox.SelectedValue);
+            var cliente = ClientesBLL.Buscar((int)SeleccionarClientecomboBox.SelectedValue);
             if (cliente != null)
             {
                 DirecciontextBox.Text = cliente.Direccion;

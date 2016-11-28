@@ -34,15 +34,16 @@ namespace ProyectoFinal.UI.Registros
             var cliente = new Clientes();
             cliente.Nombres = NombrestextBox.Text;
             cliente.Direccion = DirecciontextBox.Text;
-            cliente.Telefono = TelefonotextBox.Text;
+            cliente.Telefono = TelefonomaskedTextBox.Text;
             return cliente;
         }
 
         public void Limpiar()
         {
+            ClienteIdtextBox.Clear();
             NombrestextBox.Clear();
             DirecciontextBox.Clear();
-            TelefonotextBox.Clear();
+            TelefonomaskedTextBox.Clear();
         }
 
         private void Buscarbutton_Click(object sender, EventArgs e)
@@ -53,18 +54,37 @@ namespace ProyectoFinal.UI.Registros
             {
                 NombrestextBox.Text = cliente.Nombres;
                 DirecciontextBox.Text = cliente.Direccion;
-                TelefonotextBox.Text = cliente.Telefono;
+                TelefonomaskedTextBox.Text = cliente.Telefono;
             }
+            else
+            {
+                MessageBox.Show("Cliente No Registrado");
+            }
+        }
+
+        public static int ToInt(string texto)
+        {
+            int numero;
+            int.TryParse(texto, out numero);
+
+            return numero;
         }
 
         private void Eliminarbutton_Click(object sender, EventArgs e)
         {
-            int Id = Convert.ToInt32(ClienteIdtextBox.Text);            
-            if (ClientesBLL.Eliminar(Id))
+            var cliente = ClientesBLL.Buscar(ToInt(ClienteIdtextBox.Text));
+            if (cliente != null)
             {
-                MessageBox.Show("Cliente Eliminado");
-                Limpiar();
+                if (ClientesBLL.Eliminar(cliente))
+                    MessageBox.Show("La factoria ha sido eliminada");                
             }
+
+            //int Id = Convert.ToInt32(ClienteIdtextBox.Text);            
+            //if (ClientesBLL.Eliminar(Id))
+            //{
+            //    MessageBox.Show("Cliente Eliminado");
+            //    Limpiar();
+            //}
         }
 
         private void Modificarbutton_Click(object sender, EventArgs e)

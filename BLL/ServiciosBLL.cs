@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -17,7 +18,10 @@ namespace BLL
             {
                 try
                 {
-                    db.Servicio.Add(servicio);
+                    if (Buscar(servicio.ServicioId) == null)
+                        db.Servicio.Add(servicio);
+                    else
+                        db.Entry(servicio).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                     retorno = true;
                 }
@@ -30,17 +34,15 @@ namespace BLL
             }
         }
 
-        public static bool Eliminar(int id)
+        public static bool Eliminar(Servicios servicio)
         {
-            bool retorno = false;
-            var servicio = new Servicios();
+            bool retorno = false;           
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    servicio = db.Servicio.Find(id);
-                    db.Servicio.Remove(servicio);
-                    db.SaveChanges();
+                    db.Entry(servicio).State = EntityState.Deleted;
+                    db.SaveChanges();                    
                     retorno = true;
                 }
                 catch (Exception)
@@ -76,7 +78,12 @@ namespace BLL
             {
                 try
                 {
-                    lista = db.Servicio.ToList();
+                    if (db.Servicio.ToList().Count() > 0)
+                        lista = db.Servicio.ToList();
+                    else
+                        lista = null;
+
+                    //lista = db.Servicio.ToList();
                 }
                 catch (Exception)
                 {

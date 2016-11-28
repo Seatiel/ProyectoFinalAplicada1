@@ -33,11 +33,11 @@
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regustroDeFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.regToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeArticuloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +61,6 @@
             this.registrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroClientesToolStripMenuItem,
             this.regustroDeFacturaToolStripMenuItem,
-            this.regToolStripMenuItem,
             this.registroDeArticuloToolStripMenuItem});
             this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
             this.registrosToolStripMenuItem.Size = new System.Drawing.Size(91, 25);
@@ -81,12 +80,6 @@
             this.regustroDeFacturaToolStripMenuItem.Text = "&Registro de Factura";
             this.regustroDeFacturaToolStripMenuItem.Click += new System.EventHandler(this.regustroDeFacturaToolStripMenuItem_Click);
             // 
-            // regToolStripMenuItem
-            // 
-            this.regToolStripMenuItem.Name = "regToolStripMenuItem";
-            this.regToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
-            this.regToolStripMenuItem.Text = "&Registro de Cobro";
-            // 
             // registroDeArticuloToolStripMenuItem
             // 
             this.registroDeArticuloToolStripMenuItem.Name = "registroDeArticuloToolStripMenuItem";
@@ -97,7 +90,8 @@
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultaClientesToolStripMenuItem});
+            this.consultaClientesToolStripMenuItem,
+            this.consultaFacturasToolStripMenuItem});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(95, 25);
             this.consultasToolStripMenuItem.Text = "&Consultas";
@@ -105,14 +99,22 @@
             // consultaClientesToolStripMenuItem
             // 
             this.consultaClientesToolStripMenuItem.Name = "consultaClientesToolStripMenuItem";
-            this.consultaClientesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.consultaClientesToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.consultaClientesToolStripMenuItem.Text = "&Consulta Clientes";
+            this.consultaClientesToolStripMenuItem.Click += new System.EventHandler(this.consultaClientesToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(68, 25);
             this.ayudaToolStripMenuItem.Text = "&Ayuda";
+            // 
+            // consultaFacturasToolStripMenuItem
+            // 
+            this.consultaFacturasToolStripMenuItem.Name = "consultaFacturasToolStripMenuItem";
+            this.consultaFacturasToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.consultaFacturasToolStripMenuItem.Text = "Consulta Facturas";
+            this.consultaFacturasToolStripMenuItem.Click += new System.EventHandler(this.consultaFacturasToolStripMenuItem_Click);
             // 
             // FormularioPrincipal
             // 
@@ -145,8 +147,8 @@
         private System.Windows.Forms.ToolStripMenuItem regustroDeFacturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem regToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroDeArticuloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaFacturasToolStripMenuItem;
     }
 }
 

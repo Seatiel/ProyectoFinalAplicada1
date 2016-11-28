@@ -31,7 +31,7 @@ namespace BLL
         public static bool Eliminar(int facturaId)
         {
             bool retorno = false;
-           
+
             using (var db = new LavanderiaDb())
             {
                 try
@@ -68,9 +68,19 @@ namespace BLL
         public List<FacturasArticulos> GetList()
         {
             List<FacturasArticulos> lista = new List<FacturasArticulos>();
-            var db = new LavanderiaDb();
-            lista = db.FacturaArticulo.ToList();
-            return lista;
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    lista = db.FacturaArticulo.ToList();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                return lista;
+            }
         }
     }
 }

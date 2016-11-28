@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -18,7 +19,10 @@ namespace BLL
             {
                 try
                 {
-                    db.Articulo.Add(articulo);
+                    if (Buscar(articulo.ArticuloId) == null)
+                        db.Articulo.Add(articulo);
+                    else
+                        db.Entry(articulo).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                     retorno = true;
                 }
@@ -30,16 +34,14 @@ namespace BLL
             }
         }
 
-        public static bool Eliminar(int id)
+        public static bool Eliminar(Articulos articulo)
         {
-            bool retorno = false;
-            var articulo = new Articulos();
+            bool retorno = false;            
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    articulo = db.Articulo.Find(id);
-                    db.Articulo.Remove(articulo);
+                    db.Entry(articulo).State = EntityState.Deleted;
                     db.SaveChanges();
                     retorno = true;
                 }

@@ -19,10 +19,6 @@ namespace BLL
                 try
                 {
                     db.ServicioArticulo.AddRange(servicioArticulo);
-                    //foreach (var servicio in servicioArticulo)
-                    //{
-                    //    db.Entry(servicio).State = System.Data.Entity.EntityState.Unchanged;
-                    //}
                     db.SaveChanges();
                     retorno = true;
                 }

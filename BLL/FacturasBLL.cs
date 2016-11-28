@@ -16,7 +16,10 @@ namespace BLL
             {
                 try
                 {
-                    db.Factura.Add(factura);
+                    if (Buscar(factura.FacturaId) == null)
+                        db.Factura.Add(factura);
+                    else
+                        db.Entry(factura).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                     retorno = true;
                 }
@@ -66,30 +69,76 @@ namespace BLL
             }
         }
 
-        public static Facturas Modificar(int id)
+        public static List<Facturas> GetListId(int facturaId)
         {
-            var factura = new Facturas();
+            List<Facturas> lista = new List<Facturas>();
             using (var db = new LavanderiaDb())
             {
                 try
                 {
-                    factura = db.Factura.Where(c => c.FacturaId.Equals(id)).FirstOrDefault();                
-                    db.SaveChanges();
+                    lista = db.Factura.Where(f => f.FacturaId == facturaId).ToList();
                 }
                 catch (Exception)
                 {
+
                     throw;
                 }
-                return factura;
+                return lista;
+            }
+        }
+
+        public static List<Facturas> GetListClienteId(int clienteId)
+        {
+            List<Facturas> lista = new List<Facturas>();
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    lista = db.Factura.Where(f => f.ClienteId == clienteId).ToList();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                return lista;
+            }
+        }
+
+        public static List<Facturas> GetListFecha(DateTime desde, DateTime hasta)
+        {
+            List<Facturas> lista = new List<Facturas>();
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    lista = db.Factura.Where(f => f.Fecha >= desde && f.Fecha <= hasta).ToList();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                return lista;
             }
         }
 
         public static List<Facturas> GetList()
         {
             List<Facturas> lista = new List<Facturas>();
-            var db = new LavanderiaDb();
-            lista = db.Factura.ToList();
-            return lista;
+            using (var db = new LavanderiaDb())
+            {
+                try
+                {
+                    lista = db.Factura.ToList();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                return lista;
+            }
         }
     }
 }

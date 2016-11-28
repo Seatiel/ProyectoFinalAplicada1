@@ -118,6 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Buscarbutton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAABA5JREFUWEftlmFPk1cUx3m5vdo+wvYF9h32bovfQOebZclccFuGkGlwsjlGwGo3
+        GEJnkVq2ri0WC0i1lqItbaGddHS1VGpboQIqTgaidra0z3/3f/tUsixLbEt0yTzJyXN7n/Pc/++ee++5
+        rfvP2thYAKOjfoTDCUQiSUSjacTji0gkbsm+qalrUEN33kxmtxCIwTw8A4PjOkaDd+CJ3pfu8Gfg8KaQ
+        TC5jbm5Bwqmf1W52uxec+YDFh15nBr5VBTceA5kccDcPrKmezgKO6KYEyWRWEQrFdwbCZruM4z2XcGr6
+        ISbXgPADICacgoRYEc7nzSdA/BEwkVFgdS9KCC6LOkx11tlpRWevA+2XNmFfBFx3gan1bQhmouwU/030
+        hTaAobSCIXda7g11qMrt9OnzGBhw4tPeeegjgCUJjC2LGd7bhqBg2fmb4syS8zbQ5ckiPr8k9406ZGXW
+        2mrAF21DaB7L42QYMMSAwdQ2BIWmhSBF+STUlfslcWaL8bqRheqzwPTvPeLDwfMFaAKQEMa5EsRIpiRE
+        kLJzeQjH9JsSkFk7altDKrUiT4Y67LObRmPC7rbr2NefxcfmHNo8ytNMcDkoRJCyc9bsJ+SpWeDbINBk
+        zcoMVLUMXII9x9KoN2blQF+N5NDh2kKXrwBdqIj+sIIzMwqMv4j2dBE/+As4GSigM6hIcQJ/YsnLQlVV
+        gWpp0WNP+/xT8ROuPHRCnIKWWQXnrokMiNnS2bZGSjCMOTZewOGLRTRYsjL9Xm+kcoDmZh32fulHy3BJ
+        nDM0zRRxLqbAKVLN8+5dgnS2ndwbAoYxjOU33AMEqKoo7d9/Ah80GNF+MY+eyZI4Bdw3gYDYgL+KU1A+
+        gmyzjyBlCH7TNZSS94U6ZGXGJWhs/B6Hf7oFQ1DMXKSZ4qHVUhFi5WMFLFdB9vEdY5ilvkAelydj8vJS
+        h6zcmIV9DXqcCebgEEeLs6QQRe8UxB2glHxVtNnHd4xhbL9IBUtxTXeCVmtGU1M3Go6exYXElpwhyy7F
+        N4SwaEpnm318x5if3Ul59HiP1HwpHTrUIyEajxgxPr8u080ZU7ioOtvsS2xuwewIw+OZhdF4Qe7+mi8k
+        WkfHjzhwoAufH+zBd30O+GILWNl4hD+3injw+AkSS/cwOhEG/zPw6tZqLTCZXHL2/M0xlu3v1w5CCB5P
+        FilCUai724byxcXyrYZK4ztdrw1X9e8hG63HmvXN2iFog4MTUph7hE+utfrqbzZodcHesgvrU58BuUmx
+        Tl/vHMSz2Mg3u7GofR35iXehLBx/MRDj9a/gYd9rKoTmJcRLiH+BaMXvpjdeHET2tgWxvl3PD4BWhvhj
+        +G1c0byDoP/q8wWgOT58FYaP3oJBf/YfVfT/bHV1fwEPFCLdtAkNGQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="BuscarerrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAgEAAAAAAAD/7gAOQWRvYmUAZAAAAAAB/9sAQwACAgICAgICAgICAwICAgMEAwIC

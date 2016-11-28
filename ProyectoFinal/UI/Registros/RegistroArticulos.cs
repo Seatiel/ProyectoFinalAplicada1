@@ -89,7 +89,7 @@ namespace ProyectoFinal.UI.Registros
         {
             ArticuloIdtextBox.Clear();
             NombreArticulotextBox.Clear();
-            ServicioscomboBox.SelectedValue = 1;
+            ServicioscomboBox.SelectedIndex = 0;
             PreciotextBox.Clear();
             sa = new List<ServiciosArticulos>();
             ArticulosdataGridView.DataSource = null;

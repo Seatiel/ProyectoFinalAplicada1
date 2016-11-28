@@ -33,5 +33,17 @@ namespace ProyectoFinal
             UI.Registros.RegistroArticulos ra = new UI.Registros.RegistroArticulos();
             ra.Show();
         }
+
+        private void consultaFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UI.Consultas.ConsultaFacturas cf = new UI.Consultas.ConsultaFacturas();
+            cf.Show();
+        }
+
+        private void consultaClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UI.Consultas.ConsultaClientes cc = new UI.Consultas.ConsultaClientes();
+            cc.Show();
+        }
     }
 }
